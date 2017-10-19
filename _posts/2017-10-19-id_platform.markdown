@@ -1,7 +1,7 @@
 ID Platform
 ===========
 
-![useful image]({{ site.url }}/assets/image.png)
+![ID Platform]({{ "/assets/idplatform.png" | absolute_url }})
 
 Introduction
 ------------
