@@ -1,6 +1,8 @@
 ID Platform
 ===========
 
+![useful image]({{ site.url }}/assets/image.png)
+
 Introduction
 ------------
 
