@@ -7,7 +7,7 @@ Introduction
 SDK
 ---
 
-Barcode scanning
+[Barcode scanning](https://github.com/Coppernic/ScanSample)
 
 Fingerprint reader
 
