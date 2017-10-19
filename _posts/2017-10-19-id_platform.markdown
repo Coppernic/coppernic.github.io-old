@@ -13,4 +13,4 @@ SDK
 
 Fingerprint reader
 
-HID iCLASS reader
+[HID iCLASS reader](https://github.com/Coppernic/SeosSample/wiki)
