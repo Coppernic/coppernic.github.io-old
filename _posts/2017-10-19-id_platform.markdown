@@ -11,6 +11,6 @@ SDK
 
 [Barcode scanning](https://github.com/Coppernic/ScanSample)
 
-Fingerprint reader
+[Fingerprint reader](https://github.com/Coppernic/FingerPrintSample)
 
 [HID iCLASS reader](https://github.com/Coppernic/SeosSample/wiki)
