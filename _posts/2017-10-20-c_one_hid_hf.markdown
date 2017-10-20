@@ -1,7 +1,7 @@
 C-One HID HF
 ============
 
-![ID Platform]({{ "/assets/c_one.jpeg" | absolute_url }})
+![ID Platform]({{ "/assets/C-One_Front_01.jpeg" | absolute_url }})
 
 Introduction
 ------------
