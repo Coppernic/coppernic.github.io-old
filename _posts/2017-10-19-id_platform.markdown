@@ -16,8 +16,20 @@ Full specifications for ID Platform can be downloaded for [standard]({{ "/assets
 SDK
 ---
 
-[Barcode scanning](https://github.com/Coppernic/ScanSample)
+### Barcode scanning
 
-[Fingerprint reader](https://github.com/Coppernic/FingerPrintSample)
+![Barcode]({{ "/assets/barcode_blue.png" | absolute_url }})
 
-[HID iCLASS reader](https://github.com/Coppernic/SeosSample/wiki)
+Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
+
+### Fingerprint acquisition
+
+![Fingerprint]({{ "/assets/fingerprint_blue.png" | absolute_url }})
+
+Documentation and sample code can be found [here](https://github.com/Coppernic/FingerPrintSample)
+
+### RFID reading
+
+![RFID]({{ "/assets/rfid_blue.png" | absolute_url }})
+
+Documentation and sample code can be found [here](https://github.com/Coppernic/SeosSample/wiki)
