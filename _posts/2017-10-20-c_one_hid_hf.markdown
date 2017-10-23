@@ -3,6 +3,8 @@ C-One HID HF
 
 ![ID Platform]({{ "/assets/C-One_Front_01.jpeg" | absolute_url }})
 
+![Barcode]({{ "/assets/barcode_blue.png" | absolute_url }}) ![RFID]({{ "/assets/rfid_blue.png" | absolute_url }})
+
 Introduction
 ------------
 
