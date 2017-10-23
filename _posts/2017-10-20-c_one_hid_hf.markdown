@@ -3,7 +3,7 @@ C-One HID HF
 
 ![HID HF]({{ "/assets/C-One_Front_01.jpeg" | absolute_url }})
 
-![Barcode]({{ "/assets/barcode_blue.png" | absolute_url }}) ![RFID]({{ "/assets/rfid_blue.png" | absolute_url }})
+
 
 Introduction
 ------------
@@ -23,8 +23,12 @@ Specific features for C-One HID HF include barcode scanning and RFID HF reading.
 
 ### Barcode scanning
 
+![Barcode]({{ "/assets/barcode_blue.png" | absolute_url }})
+
 Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
 
 ### RFID HF reading
+
+ ![RFID]({{ "/assets/rfid_blue.png" | absolute_url }})
 
 Documentation and sample code can be found [here](https://github.com/Coppernic/HidHfSample).
