@@ -10,7 +10,7 @@ Coppernic provides a full SDK for its devices. For each specific function, devel
 
 Specifications
 --------------
-Full specifications for ID Platform can be downloaded [here]({{ "/assets/Technical Specifications - ID Platform Standard.pdf" | absolute_url }}).
+Full specifications for ID Platform can be downloaded for [standard]({{ "/assets/Technical Specifications - ID Platform Standard.pdf" | absolute_url }}), [XS]({{ "/assets/Technical Specifications - ID Platform XS.pdf" | absolute_url }}), [XL]({{ "/assets/Technical Specifications - ID Platform XL.pdf" | absolute_url }}). 
 
 
 SDK
