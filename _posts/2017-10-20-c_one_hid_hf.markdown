@@ -18,10 +18,11 @@ SDK
 
 Specific features for C-One HID HF include barcode scanning and RFID HF reading.
 
-### Barcode scanning
+
+### Barcode scanning
 
 Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
 
 ### RFID HF reading
 
-Documentation and sample code can be found [here](https://github.com/Coppernic/HidHfSample)
+Documentation and sample code can be found [here](https://github.com/Coppernic/HidHfSample).
