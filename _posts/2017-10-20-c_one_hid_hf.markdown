@@ -15,6 +15,13 @@ Full Specifications for C-One can be downloaded [here](https://www.coppernic.fr/
 
 SDK
 ---
-[Barcode scanning](https://github.com/Coppernic/ScanSample)
 
-[HID HF reader](https://github.com/Coppernic/HidHfSample)
+Specific features for C-One HID HF include barcode scanning and RFID HF reading.
+
+### Barcode scanning
+
+Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
+
+### RFID HF reading
+
+Documentation and sample code can be found [here](https://github.com/Coppernic/HidHfSample)
