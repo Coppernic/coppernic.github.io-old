@@ -5,14 +5,14 @@ date:   2017-10-23 10:14:44 +0200
 categories: coppernic
 ---
 
-Prerequisites
--------------
+## API from **power** package
+
+### Prerequisites
 
 * CpcSystemServices > 2.1.0
 * CpcCore > 1.1.1
 
-Build
------
+### Build
 
 **build.gradle**
 ```groovy
@@ -32,9 +32,7 @@ dependencies {
 }
 ```
 
-Setup
------
-
+### Setup
 
  * Create a power listener
 
@@ -96,5 +94,73 @@ protected void onDestroy() {
     PowerManager.get().releaseResources();
     super.onDestroy();
 }
+```
+
+## API from **powermgmt** package (Deprecated)
+
+### Prerequisites
+
+* CpcSystemServices > 1.7.4
+* CpcCore > x.x.x
+
+### Build
+
+**build.gradle**
+```groovy
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url 'https://artifactory.coppernic.fr/artifactory/libs-release' }
+}
+
+
+dependencies {
+// [...]
+    compile(group: 'fr.coppernic.sdk.core', name: 'CpcCore', version: '1.1.1', ext: 'aar') {
+        transitive = true
+    }
+// [...]
+}
+```
+
+### Setup
+
+ * Create a power utils notifier
+
+```java
+private final PowerUtilsNotifier notifier = new PowerUtilsNotifier() {
+    @Override
+   public void onPowerUp(RESULT res, int vid, int pid) {
+        if (res == RESULT.OK) {
+            //Peripheral is on
+        } else {
+            //Peripehral power status is undefined
+        }
+    }
+
+    @Override
+    public void onPowerDown(RESULT res, int vid, int pid) {
+        //Peripehral is off
+    }
+};
+```
+
+ * Create a PowerMgmt instance
+
+```java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+   PowerMgmt power = PowerMgmtFactory.get().setContext(context).setNotifier(notifier).build(); 
+}
+```
+
+ * You can start using PowerMgmt object
+
+```java
+// Power finger print on
+power.setPower(PeripheralTypesCone.FingerPrintReader,
+               ManufacturersCone.IntegratedBiometrics,
+               ModelsCone.Columbo,
+               InterfacesCone.UsbGpioPort, true);
 ```
 
