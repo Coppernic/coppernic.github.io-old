@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "C-One HID HF"
+date:   2017-10-23 10:14:44 +0200
+categories: coppernic
+---
+
 C-One HID HF
 ============
 
