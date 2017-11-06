@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "ID Platform"
+date:   2017-10-23 10:14:44 +0200
+categories: coppernic
+---
+
 ID Platform
 ===========
 
