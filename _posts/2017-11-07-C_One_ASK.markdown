@@ -36,4 +36,5 @@ Documentation and sample code can be found [here](https://github.com/Coppernic/S
 
  ![RFID]({{ "/assets/rfid_blue.png" | absolute_url }})
 
-Documentation and sample code can be found [here](https://github.com/Coppernic/AskSample).
+For basic reader management, documentation and sample code can be found [here](https://github.com/Coppernic/AskSample).
+For SAM communication, documentation and sample code can be found[here](https://github.com/Coppernic/AskSamSample).
