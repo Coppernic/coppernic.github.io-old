@@ -44,7 +44,7 @@ For basic reader management, documentation and sample code can be found [here](h
 For SAM communication, documentation and sample code can be found [here](https://github.com/Coppernic/AskSamSample).
 
 
-### Key remapping
+### Key remapping
 
 C-One has 3 programmable buttons that can be managed using API. It is possible to remap a virtual key or an application.
 
