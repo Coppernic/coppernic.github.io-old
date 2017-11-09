@@ -5,9 +5,9 @@ date:   2017-11-09 16:52:44 +0200
 categories: coppernic
 ---
 
-C-One ASK
-=========
-![HID HF]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-One_Front_01.jpeg"}})
+C-One GSM-R
+===========
+![HID HF]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-One_Front_Gsmr_01.jpeg"}})
 
 
 |![Barcode]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/barcode_blue.png" }})| ![RFID]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/rfid_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
