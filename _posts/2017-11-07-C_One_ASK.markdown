@@ -34,10 +34,8 @@ Specific features for C-One ASK include barcode scanning and RFID HF reading.
 
 Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
 
-### RFID HF reading
-
  ![RFID]({{ "/assets/rfid_blue.png" | absolute_url }})
- 
+ ### RFID HF reading
 
 The javadoc for CpcAsk can be found [here](https://github.com/Coppernic/coppernic.github.io/raw/master/assets/CpcAsk-3.0.0-javadoc.jar).
 
