@@ -9,11 +9,11 @@ C-One ASK
 =========
 |   |   |
 |---|---|
-|![HID HF]({{ "/assets/C-One_Front_01.jpeg" | absolute_url }})|![Barcode]({{ "/assets/barcode_blue.png" | absolute_url }}) *Barcode scanning*
+|![HID HF]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-One_Front_01.jpeg"}})|![Barcode]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/barcode_blue.png" }}) *Barcode scanning*
 
-![RFID]({{ "/assets/rfid_blue.png" | absolute_url }})  *RFID HF*
+![RFID]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/rfid_blue.png"}})  *RFID HF*
 
-![Android]({{ "/assets/android_blue.png" | absolute_url }}) *Key remapping*|
+![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) *Key remapping*|
 
 Introduction
 ------------
