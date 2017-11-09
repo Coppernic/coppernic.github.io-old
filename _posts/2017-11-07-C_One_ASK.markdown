@@ -35,10 +35,14 @@ Specific features for C-One ASK include barcode scanning and RFID HF reading.
 
 ### Barcode scanning
 
+C-One is equiped with a 2D barcode scanner (Opticon MDI3100). It can read both 1D and 2D barcodes.
+
 Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
 
  
 ### RFID HF reading
+
+C-One ASK embeds a RFID HF reader (ASK UCM108) especially designed for public transportation applications.
 
 The javadoc for CpcAsk can be found [here](https://github.com/Coppernic/coppernic.github.io/raw/master/assets/CpcAsk-3.0.0-javadoc.jar).
 
