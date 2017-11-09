@@ -29,6 +29,7 @@ Specific features for C-One ASK include barcode scanning and RFID HF reading.
 ### Barcode scanning
 
 ![Barcode]({{ "/assets/barcode_blue.png" | absolute_url }})
+
 *Barcode reading*
 
 Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
