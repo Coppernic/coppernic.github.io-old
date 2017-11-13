@@ -10,9 +10,9 @@ C-One GSM-R
 ![HID HF]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-One_Front_Gsmr_01.png"}})
 
 
-|![Barcode]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/barcode_blue.png" }})| ![RFID]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/rfid_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
-|:---:|:---:|:---:|
-|*Barcode scanning*|*RFID HF*|*Key remapping*| 
+| ![GSM-R]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/gsmr_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
+|:---:|:---:|
+|*GSM-R*|*Key remapping*| 
 
 Introduction
 ------------
