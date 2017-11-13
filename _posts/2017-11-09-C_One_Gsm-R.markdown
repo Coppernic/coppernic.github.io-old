@@ -38,6 +38,13 @@ The javadoc for CpcAsk can be found [here](https://github.com/Coppernic/copperni
 
 Documentation and sample code can be found [here](https://github.com/Coppernic/GsmRSample).
 
+### Alarm button management
+
+C-One GSM-R has an alamr button that can be fully controlled.
+
+Documentation and sample code can be found [here](https://github.com/Coppernic/CoreSample).
+
+Refer to Observe input pin state in the Wiki for [C-One HDK](https://github.com/Coppernic/CoreSample/wiki/cone).
 
 ### Key remapping
 
