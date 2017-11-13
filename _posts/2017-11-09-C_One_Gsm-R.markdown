@@ -10,9 +10,9 @@ C-One GSM-R
 ![HID HF]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-One_Front_Gsmr_01.png"}})
 
 
-| ![GSM-R]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/gsmr_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
-|:---:|:---:|
-|*GSM-R*|*Key remapping*| 
+| ![GSM-R]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/gsmr_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
+|:---:|:---:|:---:|
+|*GSM-R*|*Key remapping*| *Alarm button*|
 
 Introduction
 ------------
