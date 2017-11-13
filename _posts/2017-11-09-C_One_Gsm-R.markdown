@@ -34,13 +34,13 @@ Specific features for C-One GSM-R include GSM-R communication, key remapping and
 
 C-One GSM-R is equipped with a Triorail TRM5a GSM-R modem.
 
-The javadoc for CpcAsk can be found [here](https://github.com/Coppernic/coppernic.github.io/raw/master/assets/CpcAsk-3.0.0-javadoc.jar).
+The javadoc for CpcGsmr can be found [here](https://github.com/Coppernic/coppernic.github.io/raw/master/assets/CpcGsmr-0.1.0-javadoc.jar).
 
 Documentation and sample code can be found [here](https://github.com/Coppernic/GsmRSample).
 
 ### Alarm button management
 
-C-One GSM-R has an alamr button that can be fully controlled.
+C-One GSM-R has an alarm button that can be fully controlled.
 
 Documentation and sample code can be found [here](https://github.com/Coppernic/CoreSample).
 
