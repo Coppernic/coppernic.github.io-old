@@ -52,5 +52,5 @@ C-One has 3 programmable buttons that can be managed using API. It is possible t
 
 ![Android]({{ "/assets/C-One_Side_01.jpg" | absolute_url }}) ![Android]({{ "/assets/C-One_Side_02.jpg" | absolute_url }})
 
-Documentation and source code for key remapping can be found [here](https://github.com/Coppernic/KeyRemappingSample)
+Documentation and source code for key remapping can be found [here](https://github.com/Coppernic/KeyRemappingSample).
 
