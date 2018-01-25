@@ -12,7 +12,7 @@ C-One Agrident
 
 |![Barcode]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/barcode_blue.png" }})| ![RFID]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/rfid_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
 |:---:|:---:|:---:|
-|*Barcode scanning*|*RFID HF*|*Key remapping*| 
+|*Barcode scanning*|*RFID LF*|*Key remapping*| 
 
 Introduction
 ------------
@@ -27,7 +27,7 @@ Full Specifications for C-One can be downloaded [here](https://www.coppernic.fr/
 SDK
 ---
 
-Specific features for C-One ASK include barcode scanning and RFID HF reading.
+Specific features for C-One Agrident include barcode scanning and RFID LF reading.
 
 
 ### Barcode scanning
@@ -37,15 +37,11 @@ C-One is equiped with a 2D barcode scanner (Opticon MDI3100). It can read both 1
 Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
 
  
-### RFID HF reading
+### RFID LF reading
 
-C-One ASK embeds a RFID HF reader (ASK UCM108) especially designed for public transportation applications.
+C-One Agrident embeds a RFID HF reader (Agrident) especially designed for animal tracking applications.
 
-The javadoc for CpcAsk can be found [here](https://github.com/Coppernic/coppernic.github.io/raw/master/assets/CpcAsk-3.0.0-javadoc.jar).
-
-For basic reader management, documentation and sample code can be found [here](https://github.com/Coppernic/AskSample).
-
-For SAM communication, documentation and sample code can be found [here](https://github.com/Coppernic/AskSamSample).
+For reader management, documentation and sample code can be found [here](https://github.com/Coppernic/AgridentWedgeSample).
 
 
 ### Key remapping
