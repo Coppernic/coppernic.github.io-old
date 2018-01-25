@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "C-One ASK"
-date:   2017-10-23 10:14:44 +0200
+title:  "C-One Agrident"
+date:   2018-01-25 11:04:44 +0200
 categories: coppernic
 ---
 
-C-One ASK
-=========
-![HID HF]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-One_Front_01.jpeg"}})
+C-One Agrident
+==============
+![Agrident]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-One_Agrident.jpg"}})
 
 
 |![Barcode]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/barcode_blue.png" }})| ![RFID]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/rfid_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
