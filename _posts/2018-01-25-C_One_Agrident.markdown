@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "C-One ASK"
+date:   2017-10-23 10:14:44 +0200
+categories: coppernic
+---
+
+C-One ASK
+=========
+![HID HF]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-One_Front_01.jpeg"}})
+
+
+|![Barcode]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/barcode_blue.png" }})| ![RFID]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/rfid_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
+|:---:|:---:|:---:|
+|*Barcode scanning*|*RFID HF*|*Key remapping*| 
+
+Introduction
+------------
+
+Coppernic provides a full SDK for its devices. For each specific function, developers have access to a sample application and a full documentation.
+
+Specifications
+--------------
+
+Full Specifications for C-One can be downloaded [here](https://www.coppernic.fr/wp-content/uploads/Documentation/C-one/specification-c-one-fr.pdf).
+
+SDK
+---
+
+Specific features for C-One ASK include barcode scanning and RFID HF reading.
+
+
+### Barcode scanning
+
+C-One is equiped with a 2D barcode scanner (Opticon MDI3100). It can read both 1D and 2D barcodes.
+
+Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
+
+ 
+### RFID HF reading
+
+C-One ASK embeds a RFID HF reader (ASK UCM108) especially designed for public transportation applications.
+
+The javadoc for CpcAsk can be found [here](https://github.com/Coppernic/coppernic.github.io/raw/master/assets/CpcAsk-3.0.0-javadoc.jar).
+
+For basic reader management, documentation and sample code can be found [here](https://github.com/Coppernic/AskSample).
+
+For SAM communication, documentation and sample code can be found [here](https://github.com/Coppernic/AskSamSample).
+
+
+### Key remapping
+
+C-One has 3 programmable buttons that can be managed using API. It is possible to remap a virtual key or an application.
+
+![Android]({{ "/assets/C-One_Side_01.jpg" | absolute_url }}) ![Android]({{ "/assets/C-One_Side_02.jpg" | absolute_url }})
+
+Documentation and source code for key remapping can be found [here](https://github.com/Coppernic/KeyRemappingSample)
+
