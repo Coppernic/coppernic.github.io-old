@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "F-Droid"
+date:   2018-02-13 11:04:44 +0200
+categories: coppernic
+---
+
+F-Droid
+==============
+![FDroid]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/fdroid.png"}})
+
+
+Introduction
+------------
+
+Coppernic delivers its applications and samples through F-Droid application. This application is available [here](https://coppernic.fr/fdroid.apk)
+
+Default [F-Droid](https://f-droid.org/) application can also be used, but it needs to be configured to point to coppernic repository. 
+
+ - Address : http://fdroid.coppernic.fr/fdroid/repo
+
+
+
