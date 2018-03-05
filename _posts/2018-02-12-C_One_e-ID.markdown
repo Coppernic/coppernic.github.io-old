@@ -10,7 +10,7 @@ C-One e-ID
 ![C-one]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/C-ONE e-ID.jpg"}})
 
 
-|![Barcode]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/barcode_blue.png" }})| ![RFID]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/rfid_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) | ![Fingerprint]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/fingerprint_blue.png"}}) | ![Ocr]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/fingerprint_blue.png"}}) |
+|![Barcode]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/barcode_blue.png" }})| ![RFID]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/rfid_blue.png"}}) | ![Android]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) | ![Fingerprint]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/fingerprint_blue.png"}}) | ![Ocr]({{ "https://github.com/Coppernic/coppernic.github.io/raw/master/assets/android_blue.png"}}) |
 |:---:|:---:|:---:|:---:|:---:|
 |*Barcode scanning*|*RFID HF*|*Key remapping*|*Fingerprint*|*Ocr*|
 
@@ -67,6 +67,6 @@ For reader management, documentation and sample code can be found [here](https:/
 
 C-One e-ID has 3 programmable buttons that can be managed using API. It is possible to remap a virtual key or an application.
 
-![Android]({{ "/assets/C-One_Side_01.jpg" | absolute_url }}) ![Android]({{ "/assets/C-One_Side_02.jpg" | absolute_url }})
+![Android]({{ "/assets/C-One_E-ID_remap_key.png" | absolute_url }})
 
 Documentation and source code for key remapping can be found [here](https://github.com/Coppernic/KeyRemappingSample)
