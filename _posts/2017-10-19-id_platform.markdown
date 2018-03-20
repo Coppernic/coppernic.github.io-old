@@ -27,16 +27,26 @@ SDK
 
 ![Barcode]({{ "/assets/barcode_blue.png" | absolute_url }})
 
-Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
+Documentation and sample code can be found here : [ScanSample](https://github.com/Coppernic/ScanSample).
 
 ### Fingerprint acquisition
 
 ![Fingerprint]({{ "/assets/fingerprint_blue.png" | absolute_url }})
 
-Documentation and sample code can be found [here](https://github.com/Coppernic/FingerPrintSample)
+Documentation and sample code can be found here : [FingerPrintSample](https://github.com/Coppernic/FingerPrintSample)
+
+#### Suprema finger print reader
+
+For tablets with Suprema reader, it is advised to checkout this sample instead : [SupremaSample](git@github.com:Coppernic/SupremaSample.git)
+
+Be sure to checkout **idplatform** branch.
 
 ### RFID reading
 
 ![RFID]({{ "/assets/rfid_blue.png" | absolute_url }})
 
-Documentation and sample code can be found [here](https://github.com/Coppernic/SeosSample/wiki)
+Documentation and sample code can be found here : [SeosSample](https://github.com/Coppernic/SeosSample/wiki)
+
+### PCSC : Smart card reader
+
+Documentation and sample code can be found here : [PcscSample](https://github.com/Coppernic/PcscSample)
