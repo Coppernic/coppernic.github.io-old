@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "Coppernic's libs"
+date:   2018-05-03 16:41:00 +0200
+categories: SDK
+---
+
+Libs
+====
+
+Coppernic provides some libraries to ease use of some features on Android
+
+Interactors
+-----------
+
+[![Download](https://api.bintray.com/packages/coppernic/maven/Interactors/images/download.svg) ](https://bintray.com/coppernic/maven/Interactors/_latestVersion)
+[![Build Status](https://travis-ci.org/Coppernic/Interactors.svg?branch=master)](https://travis-ci.org/Coppernic/Interactors)
+
+This library aims to ease the use of Coppernic's devices peripherals.
+
+ - [Github](https://github.com/Coppernic/Interactors)
+
+### Set up
+
+```groovy
+repositories {
+    maven { url 'https://dl.bintray.com/coppernic/maven/'}
+    maven { url 'https://artifactory.coppernic.fr/artifactory/libs-release'}
+}
+
+dependencies {
+    implementation ()'fr.coppernic.lib:interactors:0.0.2'){transitive true}
+}
+```
+
+Android Splash Screen
+---------------------
+
+[![Download](https://api.bintray.com/packages/coppernic/maven/AndroidSplashScreen/images/download.svg)](https://bintray.com/coppernic/maven/AndroidSplashScreen/_latestVersion)
+[![Build Status](https://travis-ci.org/CoppernicSoftware/AndroidSplashScreen.svg?branch=master)](https://travis-ci.org/CoppernicSoftware/AndroidSplashScreen)
+
+Collection of splash screen for android
+
+ - [Github](https://github.com/CoppernicSoftware/AndroidSplashScreen) 
+
+### Set up
+
+```groovy
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'fr.coppernic.lib:splash:0.0.1'
+}
+```
