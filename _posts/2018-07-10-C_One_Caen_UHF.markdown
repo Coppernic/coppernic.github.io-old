@@ -41,7 +41,7 @@ Documentation and sample code can be found [here](https://github.com/Coppernic/S
 
 C-One Caen UHF embeds a RFID UHF reader (Caen) especially designed for UHF applications.
 
-For reader management, documentation and sample code can be found (Not available yet)).
+For reader management, documentation and sample code can be found  [here](https://github.com/Coppernic/CaenUhfSample).
 
 
 ### Key remapping
