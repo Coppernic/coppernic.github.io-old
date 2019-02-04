@@ -15,6 +15,8 @@ Introduction
 
 Coppernic delivers its applications and samples through F-Droid application. This application is available [here](https://coppernic.fr/fdroid.apk)
 
+To install it on a device, please enter this url in web browser : `https://coppernic.fr/fdroid.apk`, download will start and then you will be able to install it on your device.
+
 Default [F-Droid](https://f-droid.org/) application can also be used, but it needs to be configured to point to coppernic repository. 
 
  - Address : http://fdroid.coppernic.fr/fdroid/repo
