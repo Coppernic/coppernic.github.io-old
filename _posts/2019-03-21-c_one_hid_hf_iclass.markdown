@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "C-One HID HF iClass"
+title:  "C-One² HID HF iClass"
 date:   2019-03-21 10:14:44 +0200
 categories: coppernic
 ---
@@ -23,12 +23,12 @@ Coppernic provides a full SDK for its devices. For each specific function, devel
 Specifications
 --------------
 
-Full Specifications for C-One can be downloaded [here](https://www.coppernic.fr/wp-content/uploads/Documentation/C-one/specification-c-one-fr.pdf).
+Full Specifications for C-One² can be downloaded [here](https://www.coppernic.fr/wp-content/uploads/Documentation/C-one/specification-c-one-fr.pdf).
 
 SDK
 ---
 
-Specific features for C-One HID HF include barcode scanning and RFID HF reading.
+Specific features for C-One² HID HF iClass include barcode scanning and RFID HF reading.
 
 
 ### Barcode scanning
@@ -37,10 +37,10 @@ C-One² is equiped with a 2D barcode scanner. It can read both 1D and 2D barcode
 
 Documentation and sample code can be found [here](https://github.com/Coppernic/ScanSample).
 
- 
-### RFID HF reading
 
-C-One² HID iClass embeds a RFID HF reader (ASK UCM108) especially designed for public transportation applications.
+### RFID HF/LF reading
+
+C-One² HID iClass embeds a RFID HF/LF reader.
 
 The library and javadoc for CpcHidIclass can be found [here](https://artifactory.coppernic.fr/artifactory/webapp/#/artifacts/browse/tree/General/libs-release/fr/coppernic/sdk/hid/iclassProx/CpcHidIClassProx).
 
