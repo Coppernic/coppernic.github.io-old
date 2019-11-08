@@ -1,16 +1,16 @@
 Settings
 ========
 
-Nfc
+NFC
 ---
 
-Enable or disable Nfc
+Enable or disable NFC.
 
 > Available on C-five
 
 ### Prerequisites
 
-CpcSystemServices 2.2.0 or above installed on C-five
+CpcSystemServices 2.2.0 or above installed on C-five.
 
 ### Code
 

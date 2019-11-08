@@ -8,17 +8,16 @@ But you have to keep in mind that this API uses different internal API under the
 
 For instance, to get the actual mapping value on C-five, you need to have at least the OS version v20180709.
 
-This API is fully implemented on :
+This API is fully implemented on:
 
   - C-five OS v20180928
   - C-One² OS v20180907
 
-All other OS and C-One are also supported but it may have some limitation. Please test API you need and contact
-Coppernic's [support](https://support.coppernic.fr/index.php) if you need help.
+All other OS and C-One are also supported but it may have some limitation. Please test API you need and contact [Coppernic Support](support@coppernic.fr) if you need help.
 
 ### Get a `Mapper` object
 
-First things to do is getting a `Mapper` object. A connection to a service is needed so getting a reference is done in an asynchronous manner. RxJava is here to help :
+First thing to do is getting a `Mapper` object. A connection to a service is needed so getting a reference is done in an asynchronous manner. RxJava is here to help:
 
 ```java
 Mapper.Factory.getKeyMapperSingle(context)
@@ -39,7 +38,7 @@ Mapper.Factory.getKeyMapperSingle(context)
 
 ### Mapping
 
-#### import
+#### Import
 
 ```java
 import fr.coppernic.sdk.mapping.Mapper;
@@ -53,7 +52,7 @@ import static fr.coppernic.sdk.mapping.Mapper.ProgKey.P3;
 
 #### Prog keys
 
-Programmable keys value are defined in `Mapper.ProgKey` enum.
+Programmable keys values are defined in `Mapper.ProgKey` enum.
 
 #### API
 
@@ -98,16 +97,16 @@ mapper.close();
 
 API is stable from OS v20180907
 
-- Map a key to BARCODE_SCAN : `mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode())`
-- Get the BARCODE_SCAN value : `assertThat(mapper.getKeyMapping(P1), is(MapperUtils.getBarcodeMappingKeyCode()));`
+- Map a key to BARCODE_SCAN: `mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode())`
+- Get the BARCODE_SCAN value: `assertThat(mapper.getKeyMapping(P1), is(MapperUtils.getBarcodeMappingKeyCode()));`
 
 #### C-five
 
-- OS v20171117
-  - `mapper.getKeyMapping()` is not working well
-- OS v20180709
-  - Map a key to BARCODE_SCAN : `mapper.mapKey(P1, 293)`
-  - Get the BARCODE_SCAN value : `assertThat(mapper.getKeyMapping(P1), is(KeyEvent.KEYCODE_BUTTON_MODE));`
+- OS v20171117:
+  - `mapper.getKeyMapping()` is not working well.
+- OS v20180709:
+  - Map a key to BARCODE_SCAN: `mapper.mapKey(P1, 293)`
+  - Get the BARCODE_SCAN value: `assertThat(mapper.getKeyMapping(P1), is(KeyEvent.KEYCODE_BUTTON_MODE));`
 - OS v20180928
-  - Map a key to BARCODE_SCAN : `mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode())`
-  - Get the BARCODE_SCAN value : `assertThat(mapper.getKeyMapping(P1), is(MapperUtils.getBarcodeMappingKeyCode()));`
+  - Map a key to BARCODE_SCAN: `mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode())`
+  - Get the BARCODE_SCAN value: `assertThat(mapper.getKeyMapping(P1), is(MapperUtils.getBarcodeMappingKeyCode()));`

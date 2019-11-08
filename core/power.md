@@ -4,7 +4,7 @@ Power
 Setup
 -----
 
-* Create a power listener
+* Create a power listener:
 
 ```java
 private final PowerListener powerListener = new PowerListener() {
@@ -24,7 +24,7 @@ private final PowerListener powerListener = new PowerListener() {
 };
 ```
 
- * Register the listener
+ * Register the listener:
 
 ```java
 @Override
@@ -33,7 +33,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
- * Select a peripheral according to device and power it on
+ * Select a peripheral according to device and power it on:
 
 ```java
 if (OsHelper.isCone()) {
@@ -48,14 +48,14 @@ peripheral.on(context);
 //The the listener will be called with the result
 ```
 
- * Power off when you are done
+ * Power off when you are done:
 
 ```java
 peripheral.off(context);
 //The the listener will be called with the result
 ```
 
- * release resources
+ * Release resources:
 
 ```java
 @Override
@@ -71,4 +71,4 @@ More information
 
 - On C-One, C-One² and their e-ID counterpart, you can use `MASTER_ASKEY_CONE_GPIO` to power off all devices at the same time.
 
-- on C-One² and C-One² e-ID, you can use `USB_HOST_ASKEY_CONE_GPIO.off(context)` to force usb being device. This allow C-One² to be powered by usb. Please use CpcCore at version 1.8.16 for this.
+- On C-One² and C-One² e-ID, you can use `USB_HOST_ASKEY_CONE_GPIO.off(context)` to force USB being device. This allows C-One² to be powered by USB. Please use `CpcCore` at version 1.8.16 for this.

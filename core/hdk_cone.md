@@ -1,21 +1,21 @@
-Hdk for C-One
+HDK for C-One
 =============
 
-Don't known what a C-One is ? The answer is [here](https://www.coppernic.fr/prehome-mobility-fr/)
+Don't known what a C-One is ? The answer is [here](https://www.coppernic.fr/prehome-mobility-fr/).
 
-Hdk API is designed with [RxJava2](https://github.com/ReactiveX/RxJava)
+HDK API is designed with [RxJava2](https://github.com/ReactiveX/RxJava).
 
 Prerequisites
 -------------
 
-For first generation of product, app **CpcSystemServices** at version 2.1.0 or above needs to be installed on device.
+For first generation of products, app **CpcSystemServices** at version 2.1.0 or above needs to be installed on device.
 For [second generation](quickstart.md) **CoreService** app must be installed instead of **CpcSystemServices**.
-Please contact Coppernic support team in case of difficulties.
+Please contact [Coppernic Support](support@coppernic.fr) in case of difficulties.
 
 Use Pins of C-One's expansion port
 ----------------------------------
 
-* get a GpioPort instance
+* Get a GpioPort instance:
 
 ```java
 private GpioPort gpioPort;
@@ -35,7 +35,7 @@ public void onStart() {
 }
 ```
 
-* Use it
+* Use it:
 
 ```java
 RESULT res = gpioPort.setPin1(true)

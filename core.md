@@ -21,13 +21,13 @@ dependencies {
 }
 ```
 
- * Last versions of libs can be found in [artifactory](https://artifactory.coppernic.fr/artifactory/webapp/#/home)
- * `implementation` is a key work of android gradle plugin 3.x.x, if you are using a older plugin, consider using `compile` instead
+ * Last versions of libs can be found in [artifactory](https://artifactory.coppernic.fr/artifactory/webapp/#/home).
+ * `implementation` is a key work of Android gradle plugin 3.x.x, if you are using an older plugin, consider using `compile` instead.
 
-Hdk
+HDK
 ---
 
-How to use hdk on :
+How to use HDK on:
 
  * [C-One & C-One² family](core/hdk_cone.md)
 
