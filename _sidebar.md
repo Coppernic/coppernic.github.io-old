@@ -11,6 +11,7 @@
         - [Mapping](core/mapping.md)
         - [Settings](core/settings.md)
         - [Serial](core/serial.md)
+        - [Ethernet](core/ethernet.md)
     - Barcode
         - [Intent API](barcode/barcode_scan.md)
         - [Lib API](barcode/barcode_sample.md)
