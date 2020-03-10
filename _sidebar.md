@@ -3,6 +3,7 @@
     - [Build](build.md)
     - [F-Droid](fdroid.md)
     - [OS](os.md)
+    - [Quality](quality.md)
 
 - SDK
     - [Core](core.md)
