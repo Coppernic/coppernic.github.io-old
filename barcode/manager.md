@@ -44,7 +44,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 
 - **Add CpcBarcode dependency**
 
-More information [here]()
+More information [here](https://developer.coppernic.fr/#/barcode/library)
 
 - **Start service**
 
