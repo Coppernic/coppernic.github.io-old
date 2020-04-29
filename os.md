@@ -23,7 +23,6 @@ C-five
 - Press `Vol. UP / DOWN` button to select “sd update” then press POWER button,
 - Press `Vol. UP / DOWN` to select the correct update file,
 - Press `POWER` button to execute the update,
-
 - Waiting for “Install from sdcard complete” appearance,
 - Press `POWER` button to reboot the device.
 
