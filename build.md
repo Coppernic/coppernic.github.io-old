@@ -15,6 +15,8 @@ On your `build.gradle` file add a repository:
 repositories {
     //[...]
     maven { url "https://artifactory.coppernic.fr/artifactory/libs-release" }
+    // Some librairies hosted on github are published in bintray
+    maven { url "https://dl.bintray.com/coppernic/maven" }
 }
 ```
 
@@ -34,7 +36,10 @@ dependencies {
     // Ui
     implementation 'fr.coppernic.lib:splash:0.2.0'
 
-    // Timber
+    // Some interactors used with RxJava
+    implementation 'fr.coppernic.lib:interactors:0.1.5'
+
+    // Logging
     implementation 'com.jakewharton.timber:timber:4.7.1'
     implementation 'fr.bipi.treessence:treessence:0.3.0'
     implementation 'com.arcao:slf4j-timber:3.1'
