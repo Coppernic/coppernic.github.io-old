@@ -1,6 +1,7 @@
 Barcode Manager
 ==============
 
+> For C-One and C-five :
 > Old documentation [here](https://github.com/Coppernic/ScanSample/blob/1.0.0/README.md)
 
 API to use barcode scanner through Barcode Manager service.
@@ -9,6 +10,28 @@ There are 2 ways to trigger a barcode reading:
 
  - remap a physical button to barcode scan function
  - send an intent
+
+## Supported devices
+
+- C-One² and C-One² e-ID
+- IDPlatform
+
+This API is almost the same that the old one. The main differences is that for *C-One* and *C-five* devices,
+`barcode service` is hosted inside `CpcSystemServices` application. For *C-One²* familly and *ID Platform*, `barcode service`
+is hosted inside `Barcode Manager` application. `applicationId` is different for these apps so
+`Intents` used for controlling barcode reader have different target compoenent names.
+
+For instance, on *C-One²* we call `Intent.setPackage()` like this :
+
+```java
+intent.setPackage(OsHelper.getSystemServicePackage(context, "fr.coppernic.features.barcode"));
+```
+
+on *C-five*, we call `Intent.setPackage()` like this :
+
+```java
+intent.setPackage(OsHelper.getSystemServicePackage(context));
+```
 
 ## Remap a physical button to barcode reading
 

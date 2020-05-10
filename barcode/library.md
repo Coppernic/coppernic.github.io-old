@@ -1,9 +1,22 @@
 CpcBarcode library
 ==================
 
+CpcBarcode is a library to control barcode reader on Coppernic's devices.
+
+> For C-One and C-five :
 > Old documentation [here](https://github.com/Coppernic/BarcodeSample/blob/release/1.0/readme.md)
 
-CpcBarcode is a library to control barcode reader on Coppernic's devices.
+Supported devices
+-----------------
+
+- C-One² and C-One² e-ID
+- IDPlatform
+
+This API is almost the same that the old one. Only `groupId` of dependencies is changing.
+Old one is `"fr.coppernic.sdk.barcode:CpcBarcode:3.5.0"`
+
+- [Old CpcBarcode repository](https://artifactory.coppernic.fr/artifactory/webapp/#/artifacts/browse/tree/General/libs-release-coppernic/fr/coppernic/sdk/barcode/CpcBarcode)
+- [CpcBarcode repository](https://artifactory.coppernic.fr/artifactory/webapp/#/artifacts/browse/tree/General/libs-release-coppernic/fr/coppernic/lib/barcode)
 
 Build
 -----
