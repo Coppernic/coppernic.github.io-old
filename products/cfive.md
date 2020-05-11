@@ -13,7 +13,7 @@ Barcode Scanning
 
 C-five is equiped with a 2D barcode scanner. It can read both 1D and 2D symbologies:
 
-- [Barcode](barcode/barcode_scan.md)
+- [Barcode](barcode/manager.md)
 
 Key mapping
 -----------
