@@ -1,9 +1,11 @@
 pages:
   stage: deploy
   script:
-    - cp -r docs/. public
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
   artifacts:
     paths:
       - public
   only:
-    - master
+    - pages

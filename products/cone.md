@@ -31,3 +31,8 @@ RFID
 - [HID](products/hid.md)
 - [Agrident](products/agrident.md)
 - [Legic](products/legic.md)
+
+Technical notes
+---------------
+
+- [E-MMC](products/technical_C-one_emmc.md)
