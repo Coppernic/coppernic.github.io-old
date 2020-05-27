@@ -52,3 +52,10 @@ Here is list of permissions to declare in Manifest for each peripheral family :
 2. [Ask for permission explicitely in your application](https://developer.android.com/training/permissions/requesting#perm-check)
 
 [AndroidSplashScreen](https://github.com/Coppernic/AndroidSplashScreen) is here to help.
+
+#### Samples
+
+Samples are hosted on [gitlab](https://gitlab.com/Coppernic/idplatform/).
+
+You need to have access granted by Coppernic team. Please ask [support](https://support.coppernic.fr/index.php) for that.
+You can also send an email to [support@coppernic.fr](mailto://support@coppernic.fr)
