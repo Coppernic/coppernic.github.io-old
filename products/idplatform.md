@@ -16,6 +16,10 @@ This application is available on [F-Droid](fdroid.md).
 Power control is done via [CpcCore](core.md) library.
 More information [here](core/power.md).
 
+It is strongly advised to power off peripherals when screen is going off. This can be done
+in `onStop()` method of `Activity` or `Fragment`. Powering off devices this way
+will help saving battery life.
+
 ### Peripherals
 
 Each tablet can contain a set of peripherals, depending on which version you have. These peripherals can be connected to the main board via USB, Serial or SPI connections.
