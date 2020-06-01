@@ -1,6 +1,9 @@
 OS
 ==
 
+Update procedure
+----------------
+
 To get an OS image, please contact ou [support center](https://support.coppernic.fr/index.php)
 
 Here below are procedures for upating OS on Coppernic’s devices.
@@ -12,8 +15,7 @@ Here below are procedures for upating OS on Coppernic’s devices.
 
 You can find general procedure with adb sideload on [google website](https://developer.android.com/preview/download-ota)
 
-C-five
-------
+### C-five
 
 - Copy the OS update `.zip` file on a SD card,
 - Insert the SD card into the device,
@@ -26,8 +28,7 @@ C-five
 - Waiting for “Install from sdcard complete” appearance,
 - Press `POWER` button to reboot the device.
 
-C-One
------
+### C-One & C-One²
 
 - Copy the OS update `.zip` file on a SD card,
 - Insert the SD card into the device,
@@ -38,10 +39,9 @@ C-One
 - Waiting for “Install from sdcard complete” appearance,
 - Press HW Reset button (under the SIM trapdoor).
 
-ID Platform
------------
+### ID Platform
 
-### OTA
+#### OTA
 
 This method uses OTA (Over The Air) package:
 
@@ -50,7 +50,7 @@ This method uses OTA (Over The Air) package:
 * On your computer run `adb sideload [PACKAGE_FILE]` (Replace [PACKAGE_FILE] by the name of your package),
 * When update is complete, reboot the device.
 
-### Fastboot
+#### Fastboot
 
 If previous method fails, try this one, it uses fastboot package:
 
@@ -58,3 +58,44 @@ If previous method fails, try this one, it uses fastboot package:
 * Reboot ID Platform on fastboot mode: `adb reboot fastboot`,
 * On your computer, run `flash.sh` script.
     * If you are a Windows user, then feel free to update the flash script.
+
+Application installation
+------------------------
+
+When a new OS is installed, all user data is erased. You need to install manually
+all applications.
+
+### All devices
+
+You can download F-Droid from here : https://coppernic.fr/fdroid.apk
+Please install it on your device
+
+You can install other application from F-Droid then.
+
+### C-five
+
+- **With** barcode reader -> same apps than C-One
+- **Without** barcode reader -> nothing special
+
+### C-One
+
+Here is the list of applications you need to install :
+
+- CpcSystemServices
+
+If you have a barcode reader
+
+- CpcBarcodeSettings
+
+### C-One², ID-Platform
+
+- CoreServices
+- F-Droid Privileged Extension
+
+If you have a barcode reader
+
+- BarcodeManager
+
+If you have a C-One² **Android 8**
+
+- Remapping
