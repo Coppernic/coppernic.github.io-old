@@ -22,13 +22,13 @@ What is a keyboard wedge?
 
 A keyboard wedge is an application that can acquire data and send it directly in the keyboard buffer, just as if it was typed on a virtual keyboard.
 
-Coppernic's wedge applications add a deeper integration capability by using intents too in order to send reader's events (succesful read or read failure).
+Coppernic's wedge applications add a deeper integration capability by using Android intent in order to send reader's events (successful read or read failure).
 
 
 iCLass settings
 --------------
 iCLass Settings allows confuring wedge for the Sound, Timeout and so on...
-Settings are composed of four sections :
+Settings screen is composed of four sections :
   - Service
   - Scan
   - Keyboard wedge
@@ -42,7 +42,7 @@ Settings are composed of four sections :
    - Enable service : you can start or stop the service with this option.
    - Hid iClass Service startup boot : when it is enabled, the service will start
    automatically when the device boot.
-   - On/off reader for each scan : when enabled, it power off reader after scanning
+   - On/off reader for each scan : when enabled, it will power off reader after scanning
    (either for bad or good read). It will save battery, but can be a little bit longer
    to read as you will need to power on the reader every time.
 
@@ -50,11 +50,11 @@ Settings are composed of four sections :
  2.Scan
   - Sound : play a sound after a good or bad scan.
   - Display : display an icon while scanning.
-  - Timeout : allows setting time in seconds whil the device is trying to read a tag.
+  - Timeout : allow setting time in seconds while the device is trying to read a tag.
 
 
  3.Keyboard Wedge
-  - Enable Keyboard : when enabled, it send result to the keyboard buffer. It still send data in an Intent.
+  - Enable Keyboard : when enabled, it will send result to the keyboard buffer. It is still broadcasting Intents.
   - Scan Enter : add a carriage return of the data reader.
   - Data Send : you can choose either between card number and facility code to send to the keyboard buffer.
   - Facility code : depending on the card you want to read, card number will be different if card has a facility code or not.
@@ -145,9 +145,13 @@ protected void onStop() {
 
 // Starts Hid iClass wedge
 Intent sendIntent = new Intent();
+sendIntent.setPackage(BuildConfig.APPLICATION_ID);
 sendIntent.setAction(Defines.IntentDefines.ACTION_HID_ICLASS_SCAN);
-startActivity(sendIntent);
-
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+    startForegroundService(intent);
+} else {
+    startService(intent);
+}
 ```
 
 if you don't want to declare CpcCore in your build, then here are
