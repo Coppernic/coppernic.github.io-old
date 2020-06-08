@@ -15,7 +15,7 @@ Prerequisites
 -------------
 ### C-One² iCLass
 
- - CoreServices version 1.9.0 and above must be installed on the device
+ - CoreServices version 1.9.0 and above must be installed on the device.
 
 What is a keyboard wedge?
 -------------------------
