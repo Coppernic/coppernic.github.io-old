@@ -154,7 +154,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 }
 ```
 
-if you don't want to declare CpcCore in your build, then here are
+If you don't want to declare CpcCore in your build, then here are
 string values:
 
 ```java
