@@ -114,7 +114,7 @@ private BroadcastReceiver iClassReceiver = new BroadcastReceiver() {
 };
 ```
 
-- Register the receiver, for example in onStart
+- Register the receiver, for example in onStart:
 
 ``` java
 @Override
