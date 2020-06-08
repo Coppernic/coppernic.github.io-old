@@ -8,7 +8,7 @@ This application demonstrates how to use the HID iClass/LF Prox Wedge applicatio
 The application is composed of two parts:
 
  - iClass Settings
- - iClass Scan
+ - iClass Scan.
 
 
 Prerequisites
