@@ -4,7 +4,7 @@ HID iClass Wedge
 
 Introduction
 ------------
-This application demonstrates how to use the HID iClass/LFProx Wedge application on a C-One with Hid/LFProx RFID reader.
+This application demonstrates how to use the HID iClass/LF Prox Wedge application on a C-One² with HID iClass/LF Prox RFID reader.
 The application is composed of two parts:
 
  - iClass Settings
