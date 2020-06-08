@@ -32,3 +32,6 @@
         - [OCR](products/ocr.md)
     - [C-five](products/cfive.md)
     - [ID Platform](products/idplatform.md)
+
+- Applications
+    - [iClass Wedge](applications/iclass_wedge)
