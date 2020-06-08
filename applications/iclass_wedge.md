@@ -139,7 +139,7 @@ protected void onStop() {
 }
 ```
 
-- Trig a read
+- Trig a read:
 
 ```java
 
