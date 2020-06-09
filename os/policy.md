@@ -16,14 +16,14 @@ We are giving support for OS bugfixes during  ???
 System Applications
 -------------------
 
-OS signature keys are private to Coppernic and are given to nobody. No exceptions.
+OS signature keys are private to Coppernic and are not provided for security reason.
 
 If you want to develop system applications, then you need to send your application to our [support center](http://support.coppernic.fr) for signature.
 
 Kiosk applications
 ------------------
 
-We can give some pieces of advice to choose the kiok application that's right for you. We do not have our own product.
+We can give some pieces of advice to choose the kiosk application that's right for you. We do not have our own product.
 
 Application update
 ------------------
@@ -36,6 +36,4 @@ There are several ways to keep your applications up to date on your Coppernic de
 
 - **EMM** : You can deploy your app wit an EMM such as MobiControl.
 
-Both F-Droid and MobiControl can updat your application even when device is kiosked.
-
- 
+Both F-Droid and MobiControl can update your application even when device is kiosked.
