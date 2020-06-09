@@ -2,8 +2,12 @@
     - [Quick start](quickstart.md)
     - [Build](build.md)
     - [F-Droid](fdroid.md)
-    - [OS](os.md)
     - [Quality](quality.md)
+
+- OS
+   - [Update procedure](os/update.md)
+   - [Factory Reset](os/factory_reset.md)
+   - [Security and update policies](os/policy.md)
 
 - SDK
     - [Core](core.md)
