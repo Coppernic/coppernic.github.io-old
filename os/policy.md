@@ -1,17 +1,17 @@
-Operating System
+Operating System update policy
 ================
 
 Security update policy for Android
 ---------------
 
-As long as device is actively supported, we provide security OS update twice a year. These updates are correlated with update given by Google to [aosp project](https://source.android.com/).
-These updates can also contain bug fixes as we are continuously testing operating system.
+Coppernic combine the latest security patch and submit for approval to Google twice a year.
+These updates are correlated with update given by Google to [aosp project](https://source.android.com/).
+In the meantime, Coppernic can provide intermediary version with bug fixes if need be.
 
 Support
 -------
 
-Coppernic is giving support for developing on devices during the whole lifetime of the device.
-We are giving support for OS bugfixes during  ???
+Coppernic is giving support for developing on devices during the whole lifetime of contracts with Coppernic.
 
 System Applications
 -------------------
