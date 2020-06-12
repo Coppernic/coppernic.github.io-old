@@ -5,9 +5,9 @@
     - [Quality](quality.md)
 
 - OS
+   - [Security and update policies](os/policy.md)
    - [Update procedure](os/update.md)
    - [Factory Reset](os/factory_reset.md)
-   - [Security and update policies](os/policy.md)
 
 - SDK
     - [Core](core.md)
@@ -38,4 +38,5 @@
     - [ID Platform](products/idplatform.md)
 
 - Applications
+    - [Application management](applications/management.md)
     - [iClass Wedge](applications/iclass_wedge)

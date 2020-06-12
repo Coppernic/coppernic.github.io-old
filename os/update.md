@@ -3,9 +3,9 @@ Operating system update procedure
 
 To get an OS image, please contact our [support center](https://support.coppernic.fr/index.php).
 
-Here below are procedures for upating OS on Coppernic’s devices. Be aware that most update procedures will erase all user's data. You need to perform a full installation after updating your device.
+Here below are procedures for updating OS on Coppernic’s devices. Be aware that most update procedures will erase all user's data. You need to perform a [full installation after updating your device](os/factory_reset.md).
 
-More information [here](os/factory_reset.md)
+On some conditions, OTA (Over The Air) update may be available. Please contact our [support center](https://support.coppernic.fr/index.php) for more information.
 
 ### Prerequisites
 
