@@ -4,15 +4,15 @@ Operating System update policy
 Security update policy for Android
 ---------------
 
-Coppernic combine the latest security patch and submit for approval to Google twice a year.
+Coppernic combines the latest security patch and submits for approval to Google twice a year.
 These updates are correlated with update given by Google to [aosp project](https://source.android.com/). They
 are considered as *Major Release*.
 In the meantime, Coppernic can provide intermediary version with bug fixes if need be.
 
-There are two kinds of updates :
+There are two kinds of updates:
 
- - **Classical** : A [factory reset](os/factory_reset.md) is performed during update process. All custom data are lost and a full reinstall is needed.
- - **OTA** : This is a differential update that can be performed between *Major Release* OS. This method is available
+ - **Classical**: A [factory reset](os/factory_reset.md) is performed during update process. All custom data are lost and a full reinstall is needed.
+ - **OTA**: This is a differential update that can be performed between *Major Release* OS. This method is available
  under specific conditions. Please contact our [support center](https://support.coppernic.fr/index.php) for more information.
 
 Support
