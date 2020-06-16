@@ -1,12 +1,11 @@
-OS
-==
-
-Update procedure
-----------------
+Operating system update procedure
+=================================
 
 To get an OS image, please contact our [support center](https://support.coppernic.fr/index.php).
 
-Here below are procedures for upating OS on Coppernic’s devices.
+Here below are procedures for updating OS on Coppernic’s devices. Be aware that most update procedures will erase all user's data. You need to perform a [full installation after updating your device](os/factory_reset.md).
+
+On some conditions, OTA (Over The Air) update may be available. Please contact our [support center](https://support.coppernic.fr/index.php) for more information.
 
 ### Prerequisites
 
@@ -104,44 +103,3 @@ If previous method fails, try this one, it uses fastboot package:
 * Reboot ID Platform on Fastboot mode: `adb reboot fastboot`,
 * On your computer, run `flash.sh` script.
     * If you are a Windows user, then feel free to update the flash script.
-
-Application installation
-------------------------
-
-When a new OS is installed, all user data is erased. You need to install manually
-all applications.
-
-### All devices
-
-You can download `F-Droid` from here: https://coppernic.fr/fdroid.apk
-Please install it on your device.
-
-You can install other applications from `F-Droid` then.
-
-### C-five
-
-- **With** barcode reader -> same apps than C-One.
-- **Without** barcode reader -> nothing special.
-
-### C-One
-
-Here is the list of applications you need to install:
-
-- System Services app.
-
-If you have a barcode reader:
-
-- Barcode Settings app.
-
-### C-One², ID-Platform
-
-- Core Services,
-- F-Droid Privileged Extension app.
-
-If you have a barcode reader:
-
-- Barcode Manager app.
-
-If you have a C-One² **Android 8** (only):
-
-- Remapper app.
