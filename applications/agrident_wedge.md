@@ -34,7 +34,7 @@ Agrident Settings allows confuring wedge for the Sound, Timeout and so on...
 
  - Scan Sound: plays a sound after a good or bad read.
  - Scan Display : display an icon while scanning.
- - Scan Timeout : allow setting time in seconds while the device is trying to read a tag.
+ - Scan Timeout: allows setting time in seconds while the device is trying to read a tag.
  - Agrident Service startup boot : when it is enabled, the service will start automatically when the device boot.
  - Continuous Read : read continuously untils service is stopped or screen turns off.
  - Keyboard Wedge : when enabled, it will send result to the keyboard buffer. It is still broadcasting Intents.
