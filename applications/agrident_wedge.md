@@ -39,7 +39,7 @@ Agrident Settings allows confuring wedge for the Sound, Timeout and so on...
  - Continuous Read : read continuously untils service is stopped or screen turns off.
  - Keyboard Wedge : when enabled, it will send result to the keyboard buffer. It is still broadcasting Intents.
  - Scan Enter: adds a carriage return of the data read in keyboard buffer.
- - Remove leading 0 : Remove 0 of first data send
+ - Remove leading 0: Remove 0 from the first data sent.
 
 
 Agrident Wedge Scan
