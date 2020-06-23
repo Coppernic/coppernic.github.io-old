@@ -38,7 +38,7 @@ Agrident Settings allows confuring wedge for the Sound, Timeout and so on...
  - Agrident Service startup boot: when enabled, the service will start automatically when the device boots.
  - Continuous Read : read continuously untils service is stopped or screen turns off.
  - Keyboard Wedge : when enabled, it will send result to the keyboard buffer. It is still broadcasting Intents.
- - Scan Enter : add a carriage return of the data read in keyboard buffer.
+ - Scan Enter: adds a carriage return of the data read in keyboard buffer.
  - Remove leading 0 : Remove 0 of first data send
 
 
