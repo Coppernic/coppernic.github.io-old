@@ -44,5 +44,5 @@ Agrident Settings allows confuring wedge for the Sound, Timeout and so on...
 
 Agrident Wedge Scan
 ---------
- This application just start a scan to read an LF tag.
+ This application just starts a scan to read an LF tag.
  You can use it remapping this application to one (or more) of the 3 programmable buttons. You can do it on the device in Settings > Remap key & shortcut.
