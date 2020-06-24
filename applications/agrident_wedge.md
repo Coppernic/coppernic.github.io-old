@@ -13,7 +13,7 @@ The application is composed of two parts:
 
 Prerequisites
 -------------
-### C-One² iCLass
+### C-One² LF Agrident
 
  - CoreServices version 1.9.0 and above must be installed on the device.
 
