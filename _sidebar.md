@@ -23,6 +23,8 @@
     - [Utils](utils/utils.md)
         - [Splash screen](utils/splash.md)
         - [Interactors](utils/interactors.md)
+    - [Privileged](privileged/privileged.md)
+        - [Time](privileged/time.md)
 
 - Products
     - [C-One & C-One²](products/cone.md)
