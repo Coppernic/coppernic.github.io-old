@@ -18,6 +18,8 @@ Prerequisites
  - CoreServices version 1.9.0 and above must be installed on the device.
  - Agrident Wedge 2.2.0 and above must be installed on the device.
 
+ These applications above can be found on [F-Droid](www.coppernic.fr/fdroid.apk).
+
 What is a keyboard wedge?
 -------------------------
 
