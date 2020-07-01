@@ -58,7 +58,7 @@ Agrident Wedge Scan
  - Data will be sent as keyboard entries directly to the system.
 
 
- Using Agrident Wedge with intents
+ Using Agrident Wedge with Intents.
  ---------------------------------
 
  - For this example, Coppernic Utility library is used. You must declare it in build.gradle:
