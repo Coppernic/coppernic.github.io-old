@@ -61,7 +61,7 @@ Agrident Wedge Scan
  Using Agrident Wedge with intents
  ---------------------------------
 
- - For this example, Coppernic Utility library is used. You must declare it in build.gradle.
+ - For this example, Coppernic Utility library is used. You must declare it in build.gradle:
 
  ``` groovy
  // At project level
