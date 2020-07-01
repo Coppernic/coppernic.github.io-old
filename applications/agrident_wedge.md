@@ -54,7 +54,7 @@ Agrident Wedge Scan
  Using Agrident Wedge as a regular keyboard wedge
  --------
  - Remap the Agrident Wedge application to one (or more) of the 3 programmable buttons of the C-One
- - Push the button
+ - Push the button.
  - Data will be sent as keyboard entries directly to the system
 
 
