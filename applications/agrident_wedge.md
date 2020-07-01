@@ -121,7 +121,7 @@ Agrident Wedge Scan
  }
  ```
 
- - Trig a read
+ - Trig a read:
 
  ```java
  private static final String AGRIDENT_WEDGE = "fr.coppernic.tools.cpcagridentwedge";
