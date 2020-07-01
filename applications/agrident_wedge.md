@@ -133,7 +133,7 @@ Agrident Wedge Scan
  }
  ```
 
- if you don't want to declare CpcUtilsLib in your build, then here are
+ If you don't want to declare CpcUtilsLib in your build, then here are
  string values:
 
  ```java
