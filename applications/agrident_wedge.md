@@ -134,7 +134,7 @@ Agrident Wedge Scan
  ```
 
  if you don't want to declare CpcUtilsLib in your build, then here are
- string values :
+ string values:
 
  ```java
  public static final String ACTION_AGRIDENT_SUCCESS = "fr.coppernic.intent.agridentsuccess";
