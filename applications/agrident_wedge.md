@@ -110,7 +110,7 @@ Agrident Wedge Scan
  }    
  ```
 
- - And unregister it, in onStop for example
+ - And unregister it, in onStop for example:
 
  ``` java
  @Override
