@@ -12,7 +12,7 @@ Privileged library makes communication with Privileged service easier.
 
 ## Requirements
 
-You need to have `Privileged Extension` application installed on device. This application is available on F-Droid.
+You need to have `Privileged Extension` application installed on device. This application is available on CopperApps.
 
 ## Download
 

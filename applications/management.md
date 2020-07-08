@@ -14,5 +14,5 @@ There are several ways to keep your applications up to date on your Coppernic de
 
 - **EMM** : You can deploy your app wit an EMM such as MobiControl from Soti.
 
-Both F-Droid and MobiControl can update your application even when device is kiosked.
+Both CopperApps and MobiControl can update your application even when device is kiosked.
 We could also give some pieces of advice to choose the kiosk application that's right for you.

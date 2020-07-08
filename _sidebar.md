@@ -1,7 +1,7 @@
 - Getting started
     - [Quick start](quickstart.md)
     - [Build](build.md)
-    - [F-Droid](fdroid.md)
+    - [CopperApps](copperapps.md)
     - [Quality](quality.md)
 
 - OS
