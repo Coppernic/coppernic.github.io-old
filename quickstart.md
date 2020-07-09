@@ -20,6 +20,6 @@ If there is no `CpcSystemServices` or `CoreServices`, then Coppernic's samples w
 
 These applications are available on [CopperApps](copperapps.md).
 
-Once service is installed, [samples](https://github.com/Coppernic) can work.
+Once Services app is installed, [samples](https://github.com/Coppernic) can work.
 
 Now, let's see how to add Coppernic's libs on your [build](build.md).
