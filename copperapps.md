@@ -3,7 +3,7 @@ CopperApps
 
 ![](_media/copperapps.png)
 
-We are using a custom version of [CopperApps](https://CopperApps.org/en/) application to deliver our samples and other apps. This application is named **CopperApps**
+We are using [CopperApps](https://CopperApps.org/en/) application to deliver our samples, services and other apps like tools.
 
 Download
 --------
