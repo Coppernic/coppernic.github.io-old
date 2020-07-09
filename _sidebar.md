@@ -41,4 +41,5 @@
 
 - Applications
     - [Application management](applications/management.md)
-    - [iClass Wedge](applications/iclass_wedge)
+    - [iClass Wedge](applications/iclass_wedge.md)
+    - [Agrident Wedge](applications/agrident_wedge.md)
