@@ -285,7 +285,7 @@ Intent's extras are :
 ## Configure the barcode's service
 
 Barcode reader can be configured via Barcode Manager application. This application is usually installed on devices.
-It is also available on [F-Droid](https://developer.coppernic.fr/#/fdroid).
+It is also available on [CopperApps](copperapps.md).
 
 #### General
 

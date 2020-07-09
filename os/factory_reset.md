@@ -9,10 +9,10 @@ all applications.
 
 ### All devices
 
-You can download `F-Droid` from here: https://coppernic.fr/fdroid.apk
+You need to download `CopperApps`. Please refer to [CopperApps](copperapps.md) page.
 Please install it on your device.
 
-You can install other applications from `F-Droid` then.
+You can install other applications from `CopperApps` then.
 
 ### C-five
 
@@ -32,7 +32,7 @@ If you have a barcode reader:
 ### C-One², ID-Platform
 
 - Core Services,
-- F-Droid Privileged Extension app.
+- CopperApps Privileged Extension app.
 
 If you have a barcode reader:
 

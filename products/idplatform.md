@@ -12,7 +12,7 @@ Quick start
 ### Powering
 
 To control powering of peripherals, `CoreServices` application needs to be installed.
-This application is available on [F-Droid](fdroid.md).
+This application is available on [CopperApps](copperapps.md).
 Power control is done via [CpcCore](core.md) library.
 More information [here](core/power.md).
 
