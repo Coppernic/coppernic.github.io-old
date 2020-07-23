@@ -16,21 +16,21 @@ Prerequisites
 ### C-One² LF Agrident
 
  - CoreServices version 1.9.0 and above must be installed on the device.
- - Agrident Wedge 2.2.0 and above must be installed on the device.
+ - Agrident Wedge 2.4.0 and above must be installed on the device.
 
  The applications above can be found on [CopperApps](copperapps.md).
 
 What is a keyboard wedge?
 -------------------------
 
-A keyboard wedge is an application that can acquire data and send it directly in the keyboard buffer, just as if it was typed on a virtual keyboard.
+A keyboard wedge is an application that can acquire data and send it directly into the keyboard buffer, just as if it was typed on a virtual keyboard.
 
 Coppernic's wedge applications add a deeper integration capability by using Android intent in order to send reader's events (successful read or read failure).
 
 
 Agrident settings
 --------------
-Agrident Settings allows confuring wedge for the Sound, Timeout and so on...
+Agrident Settings allows configuring wedge for the Sound, Timeout and so on...
 
 
 ![](_images/agrident_settings.png)
@@ -80,7 +80,7 @@ Agrident Wedge Scan
  ```
 
 
- - Declare a broadcast receiver in your class, it will receive the intents from the Agrident Wedge application.
+ - Declare a broadcast receiver in your class, it will receive the intents from the Agrident Wedge application:
 
  ``` java
  private BroadcastReceiver agridentReceiver = new BroadcastReceiver() {
@@ -96,7 +96,7 @@ Agrident Wedge Scan
  };
  ```
 
- - Register the receiver, for example in onStart
+ - Register the receiver, for example in onStart:
 
  ``` java
  @Override
