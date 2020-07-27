@@ -59,6 +59,6 @@ Here is a list of permissions to declare in Manifest for each peripheral family:
 
 #### Samples
 
-Samples are hosted on [gitlab](https://gitlab.com/Coppernic/idplatform/).
+Samples are hosted on [gitlab](https://gitlab.com/Coppernic/idplatform/) but access is protected.
 
-You need to have access granted by Coppernic team. Please ask [support](https://support.coppernic.fr/index.php) from our ticketing tool or send an email to [support@coppernic.fr](mailto://support@coppernic.fr).
+If you got a 404 error, you will need to have access granted by Coppernic team. Please ask [support](https://support.coppernic.fr/index.php) from our ticketing tool or send an email to [support@coppernic.fr](mailto://support@coppernic.fr).
