@@ -9,7 +9,7 @@ This application is based on [F-Droid](https://f-droid.org/)
 Download
 --------
 
-CopperApps build by Coppernic is available for download on [Github](https://github.com/Coppernic/coppernic.github.io/releases) or directly from the web browser of your PDA as an APK through https://coppernic.fr/copperapps.apk. You can download this apk from your device and install it via your browser.
+CopperApps build by Coppernic is available for download on [Github](https://github.com/Coppernic/coppernic.github.io/releases) or directly from the web browser of your PDA as an APK through https://coppernic.fr/copperapps.apk.
 
 It embeds Coppernic's repository:
 
