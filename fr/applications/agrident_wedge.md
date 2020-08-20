@@ -24,7 +24,7 @@ Prérequis
 Qu'est ce qu'un keyboard wedge?
 -------------------------------
 
-Une application keyboard wedge est une application qui récupère des données du lecteur et qui les envoie directement dans la zone tampon du clavier, comme si elles avaient été tapées sur un clavier virtuel. Elle sont ensuite insérées automatiquement dans les champs de texte par le système Android.
+Une application keyboard wedge est une application qui récupère des données du lecteur et qui les envoie directement dans la zone tampon du clavier, comme si elles avaient été tapées sur un clavier virtuel. Elles sont ensuite insérées automatiquement dans les champs de texte par le système Android.
 
 Les applications Coppernic de type wedge offrent une meilleure intégration grâce à l'utilisation d'`Intent` Android en plus des données insérées dans le buffer du clavier. On peut ainsi savoir si la lecture a réussie ou non, récupérer le code d'erreur ou tout simplement récupérer les données du lecteur de manière beaucoup plus réactive. Ces données peuvent être traité par l'application avant affichage à l'opérateur.
 
