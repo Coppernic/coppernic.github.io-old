@@ -1,10 +1,10 @@
 Power
 =====
 
-Setup
------
+Installation
+------------
 
-* Create a power listener:
+* Créer un power listener:
 
 ```java
 private final PowerListener powerListener = new PowerListener() {
@@ -24,7 +24,7 @@ private final PowerListener powerListener = new PowerListener() {
 };
 ```
 
- * Register the listener:
+ * Enregister le listener:
 
 ```java
 @Override
@@ -33,7 +33,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
- * Select a peripheral according to device and power it on:
+ * Sélectionner un périphérique en fonction de l'appareil et alimentez le:
 
 ```java
 if (OsHelper.isCone()) {
@@ -45,17 +45,17 @@ if (OsHelper.isCone()) {
 }
 
 peripheral.on(context);
-//The the listener will be called with the result
+//The listener will be called with the result
 ```
 
- * Power off when you are done:
+ * Eteignez le une fois fini:
 
 ```java
 peripheral.off(context);
 //The the listener will be called with the result
 ```
 
- * Release resources:
+ * Libérez les ressources:
 
 ```java
 @Override
@@ -66,9 +66,9 @@ protected void onDestroy() {
 }
 ```
 
-More information
-----------------
+Plus d'informations
+-------------------
 
-- On C-One, C-One² and their e-ID counterpart, you can use `MASTER_ASKEY_CONE_GPIO` to power off all devices at the same time.
+- Sur C-One, C-One² et leur version e-ID, vous pouvez utliser `MASTER_ASKEY_CONE_GPIO` pour éteindre tous les périphériques en même temps.
 
-- On C-One² and C-One² e-ID, you can use `USB_HOST_ASKEY_CONE_GPIO.off(context)` to force USB being device. This allows C-One² to be powered by USB. Please use `CpcCore` at version 1.8.16 for this.
+- Sur C-One² et C-One² e-ID, vous pouvez utiliser `USB_HOST_ASKEY_CONE_GPIO.off(context)` pour que le port USB soit mis en mode "device". Cela permet d'alimenter le C-One² par USB. Utiliser `CpcCore` à la version 1.8.16 pour cela.
