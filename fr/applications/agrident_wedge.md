@@ -4,67 +4,71 @@ Agrident Wedge
 
 Introduction
 ------------
-This application demonstrates how to use the Agrident Wedge application on a C-One² with LF Agrident RFID reader.
-The application is composed of two parts:
+Cette application explique comment utiliser l'application Agrident Wedge sur un C-One² disposant d'un lecteur RFID LF Agrident.
+L'application est composée de deux parties:
 
  - Agrident Wedge Settings (AW Settings)
  - Agrident Wedge Scan (AW Scan)
 
 
-Prerequisites
--------------
+Prérequis
+---------
+
 ### C-One² LF Agrident
 
- - CoreServices version 1.9.0 and above must be installed on the device.
- - Agrident Wedge 2.2.0 and above must be installed on the device.
+ - CoreServices version 1.9.0 et supérieure doit être installée sur le terminal.
+ - Agrident Wedge 2.2.0 et supérieure doit être installée sur le terminal.
 
- The applications above can be found on [F-Droid](www.coppernic.fr/fdroid.apk).
+ Les application sont disponibles sur [CopperApps](copperapps.md) (Disponible en téléchargement [ici](https://coppernic.fr/copperapps.apk)).
 
-What is a keyboard wedge?
--------------------------
+Qu'est ce qu'un keyboard wedge?
+-------------------------------
 
-A keyboard wedge is an application that can acquire data and send it directly in the keyboard buffer, just as if it was typed on a virtual keyboard.
+Une application keyboard wedge est une application qui récupère des données du lecteur et qui les envoie directement dans la zone tampon du clavier, comme si elles avaient été tapées sur un clavier virtuel. Elle sont ensuite insérées automatiquement dans les champs de texte par le système Android.
 
-Coppernic's wedge applications add a deeper integration capability by using Android intent in order to send reader's events (successful read or read failure).
+Les applications Coppernic de type wedge offrent une meilleure intégration grâce à l'utilisation d'`Intent` Android en plus des données insérées dans le buffer du clavier. On peut ainsi savoir si la lecture a réussie ou non, récupérer le code d'erreur ou tout simplement récupérer les données du lecteur de manière beaucoup plus réactive. Ces données peuvent être traité par l'application avant affichage à l'opérateur.
 
 
-Agrident settings
---------------
-Agrident Settings allows confuring wedge for the Sound, Timeout and so on...
+Paramètres Agrident
+-------------------
+
+Les paramètres de l'application *Agrident Wedge* permettent la configuration du son, des délais, et bien d'autres...
 
 
 ![](_images/agrident_settings.png)
 
- - Scan Sound: plays a sound after a good or bad read.
- - Scan Display: displays an icon while reader is scanning.
- - Scan Timeout: allows setting time in seconds while the device is trying to read a tag.
- - Agrident Service startup boot: when enabled, the service will start automatically when the device boots.
- - Continuous Read: reads continuously until service is stopped or screen turns off.
- - Keyboard Wedge: when enabled, it will send result to the keyboard buffer. It is still broadcasting Intents.
- - Scan Enter: adds a carriage return of the data read in keyboard buffer.
- - Remove leading 0: Remove 0 from the first data sent.
+ - Scan Sound: joue un son après une lecture réussie ou non.
+ - Scan Display: affiche une icône durant la lecture.
+ - Scan Timeout: configure la durée pendant laquelle le lecteur va essayer de lire un tag.
+ - Agrident Service startup boot: si activé, le service va se lancer automatiquement au démarrage du terminal.
+ - Continuous Read: le lecteur va lire en permanence jusqu'à ce que le service soit stoppé ou l'écran éteint.
+ - Keyboard Wedge: si activé, envoie le résultat au clavier. Un `Intent` est toujours envoyé.
+ - Scan Enter: ajoute un retour chariot dans le tampon du clavier après les données lues.
+ - Remove leading 0: supprime le caractère `0` au début des données envoyées.
+
+ Agrident Wedge Scan
+ ---------------------
+
+ Cette application lance un scan pour lire un tag LF.
+ Vous pouvez utiliser cette application en l'associant avec un (ou plusieurs) bouton programmable. Vous pouvez effectuer cette opération sur le terminal dans `Paramètres` -> `Remap key & shorcut`.
 
 
-Agrident Wedge Scan
----------
- This application just starts a scan to read an LF tag.
- You can use it remapping this application to one (or more) of the 3 programmable buttons. You can do it on the device in Settings > Remap key & shortcut.
+ Utiliser Agrident Wedge comme un clavier
+ ----------------------------------------
+
+ - Associer l'application *Agrident Wedge Scan* avec un (ou plusieurs) bouton programmable du C-One.
+ - Configurer l'option *Keyboard Wedge* de l'application
+ - Appuyer sur le bouton.
+ - Les données sont envoyées au système comme des entrées clavier.
 
 
- Using Agrident Wedge as a regular keyboard wedge
- --------
- - Remap the Agrident Wedge application to one (or more) of the 3 programmable buttons of the C-One.
- - Push the button.
- - Data will be sent as keyboard entries directly to the system.
+ Utiliser Agrident Wedge avec des Intents.
+ -----------------------------------------
 
-
- Using Agrident Wedge with Intents.
- ---------------------------------
-
- - For this example, Coppernic Utility library is used. You must declare it in build.gradle:
+ - Pour cet exemple, la librairie utilitaire de Coppernic est utilisée. Vous devez la déclarer dans votre build.gradle:
 
  ``` groovy
- // At project level
+ // Au niveau du projet
  allprojects {
      repositories {
          google()
@@ -75,12 +79,14 @@ Agrident Wedge Scan
  ```
 
  ``` groovy
- // At module level
- implementation(group: 'fr.coppernic.sdk.cpcutils', name: 'CpcUtilsLib', version: '6.13.0', ext: 'aar')
+ // Au niveau du module
+ dependencies {
+     implementation 'fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.13.0'
+}
  ```
 
 
- - Declare a broadcast receiver in your class, it will receive the intents from the Agrident Wedge application.
+ - Déclarer un `BroadcastReceiver` dans votre classe, il recevra les intents en provenance de l'application *Agrident Wedge*.
 
  ``` java
  private BroadcastReceiver agridentReceiver = new BroadcastReceiver() {
@@ -96,7 +102,7 @@ Agrident Wedge Scan
  };
  ```
 
- - Register the receiver, for example in onStart
+ - Enregister le receiver, par exemple dans la méthode `onStart()`
 
  ``` java
  @Override
@@ -107,10 +113,10 @@ Agrident Wedge Scan
      intentFilter.addAction(CpcDefinitions.ACTION_AGRIDENT_SUCCESS);
      intentFilter.addAction(CpcDefinitions.ACTION_AGRIDENT_ERROR);
      registerReceiver(agridentReceiver, intentFilter);
- }    
+ }
  ```
 
- - And unregister it, in onStop for example:
+ - Et désinscrivez le, dans la méthode `onStop()` par exemple:
 
  ``` java
  @Override
@@ -121,7 +127,7 @@ Agrident Wedge Scan
  }
  ```
 
- - Trig a read:
+ - Déclencher une lecture:
 
  ```java
  private static final String AGRIDENT_WEDGE = "fr.coppernic.tools.cpcagridentwedge";
@@ -133,8 +139,7 @@ Agrident Wedge Scan
  }
  ```
 
- If you don't want to declare CpcUtilsLib in your build, then here are
- string values:
+ Si vous ne voulez pas déclarer CpcUtilsLib dans votre application, voici les valeurs des constantes:
 
  ```java
  public static final String ACTION_AGRIDENT_SUCCESS = "fr.coppernic.intent.agridentsuccess";
