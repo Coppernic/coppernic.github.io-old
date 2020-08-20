@@ -1,61 +1,61 @@
 Barcode Manager
 ==============
 
-> For C-One and C-five :
-> Old documentation [here](https://github.com/Coppernic/ScanSample/blob/1.0.0/README.md)
+> Pour C-One et C-five :
+> Ancienne documentation [ici](https://github.com/Coppernic/ScanSample/blob/1.0.0/README.md)
 
-API to use barcode scanner through Barcode Manager service.
+API pour utiliser le scanner de codes à barres via le service Barcode Manager.
 
-There are 2 ways to trigger a barcode reading:
+Il y a 2 manières de déclencher la lecture d'un code à barres:
 
- - remap a physical button to barcode scan function
- - send an intent
+ - affecter un bouton physique à la fonction scan de code barre.
+ - envoyer un *Intent*
 
-## Supported devices
+## Terminaux compatibles
 
-- C-One² and C-One² e-ID
+- C-One² et C-One² e-ID
 - IDPlatform
 
-This API is almost the same that the old one. The main differences is that for *C-One* and *C-five* devices,
-`barcode service` is hosted inside `CpcSystemServices` application. For *C-One²* familly and *ID Platform*, `barcode service`
-is hosted inside `Barcode Manager` application. `applicationId` is different for these apps so
-`Intents` used for controlling barcode reader have different target compoenent names.
+Cette API est presque la même que l'ancienne. Les principales différences sont :
+- pour les appareils *C-One* and *C-five*,`barcode service` est contenu dans
+ l'application `CpcSystemServices`. Pour la famille des *C-One²* et
+ *ID Platform*, `barcode service` est contenu dans l'application `Barcode Manager`.
+ - l'`applicationId` est différent pour ces applications donc les `Intents` utilisés pour contrôler le lecteur de code barres ont un `ComponentName` différents.
 
-For instance, on *C-One²* we call `Intent.setPackage()` like this :
+Par exemple, sur *C-One²* nous utilisons `Intent.setPackage()` de cette façon :
 
 ```java
 intent.setPackage(OsHelper.getSystemServicePackage(context, "fr.coppernic.features.barcode"));
 ```
 
-on *C-five*, we call `Intent.setPackage()` like this :
+sur *C-five*, nous utlisons `Intent.setPackage()` de cette façon :
 
 ```java
 intent.setPackage(OsHelper.getSystemServicePackage(context));
 ```
 
-## Remap a physical button to barcode reading
+## Associer un bouton physique à la lecture de code barres
 
-In Android settings application, go to remap key & shortcuts (may change on different devices), then remap a key to SCAN or Barcode Scan
- (device dependent).
+Dans l'application de paramètres d'Android, aller à <kbd>remap key & shortcuts</kbd> (peut changer selon les appareils), et associer un bouton à <kbd>SCAN</kbd> ou <kbd>Barcode Scan</kbd> (en fonction du terminal).
 
 ## Intents
 
-This service can respond to `Intents`. There are two options to communicate via `Intents`:
+Ce service répond aux `Intents`. Il y a 2 façons de communiquer via `Intents`:
 
-- add a dependency to CpcBarcode library and use its helper function
-- build an `Intent` from scratch and use it
+- ajouter une dépendance à la librairie CpcBarcode et utiliser ses fonctions *Helper*
+- développer un `Intent` from scratch et l'utiliser
 
-In every cases, you shall declare a permission to be able to communicate with the service.
+Dans tous les cas, vous devrez déclarer une permission pour être capable de communiquer avec le service.
 
 - **Permissions**
 
-You shall declare `fr.coppernic.permission.BARCODE` permission into your manifest:
+Vous devez déclarer la permission `fr.coppernic.permission.BARCODE` dans votre manifest:
 
 ```xml
     <uses-permission android:name="fr.coppernic.permission.BARCODE" />
 ```
 
-You also need to ask for this permission explicitly:
+Et vous devez également explicitement demander cette permission:
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -65,11 +65,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 
 ### Intents via CpcBarcode
 
-- **Add CpcBarcode dependency**
+- **Ajout de la dépendance CpcBarcode**
 
-More information [here](https://developer.coppernic.fr/#/barcode/library)
+Plus d'informations [ici](https://developer.coppernic.fr/#/barcode/library)
 
-- **Start service**
+- **Démarrer le service**
 
 ```java
 ComponentName cn = BarcodeReader.ServiceManager.startService(context);
@@ -78,7 +78,7 @@ if(cn == null) {
 }
 ```
 
-- **Stop service**
+- **Arrêter le service**
 
 ```java
 ComponentName cn = BarcodeReader.ServiceManager.stopService(context);
@@ -87,7 +87,7 @@ if(cn == null) {
 }
 ```
 
-- **Trig a scan**
+- **Déclencher un scan**
 
 ```java
 ComponentName cn = BarcodeReader.ServiceManager.startScan(context);
@@ -96,7 +96,7 @@ if(cn == null) {
 }
 ```
 
-- **Stop a scan**
+- **Arrêter un scan**
 
 ```java
 ComponentName cn = BarcodeReader.ServiceManager.stopScan(context);
@@ -105,9 +105,9 @@ if(cn == null) {
 }
 ```
 
-### Intents with CpcCore
+### Intents avec CpcCore
 
-#### Start service
+#### Démarrer le service
 
 ```java
 import fr.coppernic.sdk.core.Defines;
@@ -131,7 +131,7 @@ public void startScan(){
 }
 ```
 
-#### Stop service
+#### Arrêter le service
 
 ```java
 import fr.coppernic.sdk.core.Defines;
@@ -155,7 +155,7 @@ public void startScan(){
 }
 ```
 
-#### Trig a scan
+#### Déclencher un scan
 
 ```java
 import fr.coppernic.sdk.core.Defines;
@@ -179,12 +179,11 @@ public void startScan(){
 }
 ```
 
-When reader is in continuous mode, it shall be stopped explicitly, **even if a barcode
-is read**. Otherwise, it is stopped automatically by a read or a timeout.
+Quand le lecteur est en lecture continue, il doit être arrêté de façon explicite, **même si un code barres est lu**. Autrement, il est arrêté automatiquement par une lecture ou un timeout.
 
-#### Stop a scan
+#### Arrêter un scan
 
-Stopping a scan is needed when the reader is in continuous mode.
+Arrêter un scan est requis quand le lecteur est en lecture continue.
 
 ```java
 import fr.coppernic.sdk.core.Defines;
@@ -208,9 +207,9 @@ public void stopScan(){
 }
 ```
 
-### Get scan result
+### Récupérer le résultat d'un scan
 
- - Register a broadcast receiver
+ - Enregistrer un broadcast receiver
 
 ```java
 import fr.coppernic.sdk.core.Defines;
@@ -237,7 +236,7 @@ public class Example extends android.app.Activity {
 }
 ```
 
- - Get the result
+ - Récupérer le résultat
 
 
 ```java
@@ -261,10 +260,10 @@ public class Example extends android.app.Activity {
 }
 ```
 
-Intent's extras are :
- - **Defines.Keys.KEY_RESULT**: `int`, result of the scan. You can use `CpcResult.getResultFromOrdinal(int)` to get a `RESULT`
- - **Defines.Keys.KEY_BARCODE_DATA**: `String`, data scanned. Available only when result is `RESULT.OK`
- - **Defines.Keys.KEY_BARCODE_DATA_BYTES**: `byte[]`, data scanned in byte array. Available only when result is `RESULT.OK`
+Les extras des Intents sont :
+ - **Defines.Keys.KEY_RESULT**: `int`, résultat du scan. Vous pouvez utiliser `CpcResult.getResultFromOrdinal(int)` pour avoir un `RESULT`
+ - **Defines.Keys.KEY_BARCODE_DATA**: `String`, les données scannées. Disponibles uniquement quand le résultat est `RESULT.OK`
+ - **Defines.Keys.KEY_BARCODE_DATA_BYTES**: `byte[]`, les données scannées en tableau de bytes. Disponibles uniquement quand le résultat est `RESULT.OK`
 
 ### Defines
 
@@ -282,38 +281,38 @@ Intent's extras are :
      - IDPlatform : `"fr.coppernic.features.barcode.idplatform"`
      - ...
 
-## Configure the barcode's service
+## Configurer le service de code barres
 
-Barcode reader can be configured via Barcode Manager application. This application is usually installed on devices.
-It is also available on [F-Droid](https://developer.coppernic.fr/#/fdroid).
+Le lecteur de code barres peut être configuré via l'application **Barcode Manager**. Cette application est habituellement installée sur les terminaux.
+Elle est également disponible sur [CopperApps](/fr/copperapps).
 
-#### General
+#### Général
 
-* Scan sound: play a sound when scan is ended or not
-* Scan display: display/hide scan indicator on screen (Set `false` to this option unless you know what you are doing)
-* Continuous mode: enable/disable continuous mode (scan until button is released or barcode is read)
-* Scan timeout: scan timeout
-* Barcode service startup at boot: enable/disable automatic barcode service start when device boot is finished
-* Keep barcode reader opened: if checked, it improves scan speed
-* Keyboard wedge: send data to input buffer in addition to intent
-* Keyboard fast wedge: use faster keyboard wedge, an additional keyboard application needs to be installed
-* Search and replace: use regular expression to search for a pattern in data read and replace it by another value
+* **Scan sound** : joue un son avec une lecture réussie ou non
+* **Scan display** : affiche/cache un indicateur de scan à l'écran (Régler cette option à `false` sauf si vous savez ce que vous faites)
+* **Continuous mode** : active/désactive la lecture continue (scan jusqu'à ce que le bouton soit relâché ou qu'un code barre soit lu)
+* **Scan timeout** : délai de scan
+* **Barcode service startup at boot** : active/désactive le démarre automatique du service Barcode quand l'appareil a fini de démarrer.
+* **Keep barcode reader opened**: si sélectionné, améliore la vitesse de lecture
+* **Keyboard wedge**: envoie les données au tampon d'entrée en plus de l'intent
+* **Keyboard fast wedge**: utilise un keyboard wedge plus rapide, une application clavier supplémentaire doit être installée
+* **Search and replace**: utilise une expression régulière pour chercher un pattern dans les données et les remplacer par une autre valeur
 
-#### Barcode reader
+#### Lecteur de code à barres
 
-Barcode reader specific settings.
+Paramètres spécifique au lecteur de code à barre.
 
-#### Parameters
+#### Paramètres
 
-Depend on devices.
+Dépend de l'appareil.
 
 #### Symbologies
 
-Allow user to enable/disable symbologies, to add suffix and prefix, to add minimal and maximum lengths that can be read.
+Permet à l'utilisateur d'activer/désactiver des symbologies, d'ajouter des suffixes et préfixes, d'ajouter une taille minimale et maximale à ce qui peut être lu.
 
-### Using CpcBarcode library
+### Utiliser la librairie CpcBarcode
 
-To configure the service, you shall depend on **CpcBarcode** available in SDK.
+Pour configurer le service, vous devez utiliser **CpcBarcode** disponible dans le SDK.
 
 ```java
 import fr.coppernic.lib.barcode.core.GlobalConfig;
