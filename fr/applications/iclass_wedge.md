@@ -1,34 +1,37 @@
 HID iClass Wedge
-=====
+================
 
 
 Introduction
 ------------
-This application demonstrates how to use the HID iClass/LF Prox Wedge application on a C-One² with HID iClass/LF Prox RFID reader.
-The application is composed of two parts:
+
+Cette application montre comment utiliser le lecteur HID iClass/LF Prox Wedge sur un C-One² disposant d'un lecteur HID iClass/LF Prox RFID.
+L'application est composée de deux parties:
 
  - iClass Settings,
  - iClass Scan.
 
 
-Prerequisites
--------------
+Prérequis
+---------
+
 ### C-One² iClass
 
- - CoreServices version 1.9.0 and above must be installed on the device.
+ - CoreServices à la version version 1.9.0 ou supérieure doit être installée sur le terminal.
 
-What is a keyboard wedge?
--------------------------
+Qu'est ce qu'un keyboard wedge?
+-------------------------------
 
-A keyboard wedge is an application that can acquire data and send it directly in the keyboard buffer, just as if it was typed on a virtual keyboard.
+Une application keyboard wedge est une application qui récupère des données du lecteur et qui les envoie directement dans la zone tampon du clavier, comme si elles avaient été tapées sur un clavier virtuel. Elle sont ensuite insérées automatiquement dans les champs de texte par le système Android.
 
-Coppernic's wedge applications add a deeper integration capability by using Android intent in order to send reader's events (successful read or read failure).
+Les applications Coppernic de type wedge offrent une meilleure intégration grâce à l'utilisation d'`Intent` Android en plus des données insérées dans le buffer du clavier. On peut ainsi savoir si la lecture a réussie ou non, récupérer le code d'erreur ou tout simplement récupérer les données du lecteur de manière beaucoup plus réactive. Ces données peuvent être traité par l'application avant affichage à l'opérateur.
 
 
-iCLass settings
---------------
-iCLass Settings allows confuring wedge for the Sound, Timeout and so on...
-Settings screen is composed of four sections :
+Paramètres iCLass
+-----------------
+
+Les paramètres d'HID iClass Wedge permettent la configuration du son, des délais, et bien d'autres...
+L'écran de paramètres est composé de 4 sections :
   - Service
   - Scan
   - Keyboard wedge
@@ -38,45 +41,47 @@ Settings screen is composed of four sections :
 ![](_images/iclass_settings.png) ![](_images/iclass_settings_2.png)
 
 
-1.Service
-   - Enable service : you can start or stop the service with this option.
-   - Hid iClass Service startup boot : when it is enabled, the service will start
-   automatically when the device boot.
-   - On/off reader for each scan : when enabled, it will power off reader after scanning
-   (either for bad or good read). It will save battery, but can be a little bit longer
-   to read as you will need to power on the reader every time.
+ 1.Service
+   - **Enable service** : Démarre ou arrête le service.
+   - **Hid iClass Service startup boot** : Permet d'activer le lancement du service au démarrage du terminal.
+   - **On/off reader for each scan** : si activé, le lecteur s'éteindra après une lecture.(qu'elle soit réussie ou non).
+Économise la batterie, mais peut augmenter le temps de lecture car le lecteur doit démarrer à chaque fois.
 
 
  2.Scan
-  - Sound : play a sound after a good or bad scan.
-  - Display : display an icon while scanning.
-  - Timeout : allow setting time in seconds while the device is trying to read a tag.
+  - **Sound** : joue un son après une lecture réussie ou non.
+  - **Display** : affiche une icône durant le scan du lecteur.
+  - **Timeout** : paramètre la durée pendant laquelle le lecteur va essayer de lire un tag.
 
 
  3.Keyboard Wedge
-  - Enable Keyboard : when enabled, it will send result to the keyboard buffer. It is still broadcasting Intents.
-  - Scan Enter : add a carriage return of the data reader.
-  - Data Send : you can choose either between card number and facility code to send to the keyboard buffer.
-  - Facility code : depending on the card you want to read, card number will be different if card has a facility code or not.
+  - **Enable Keyboard** : si activé, envoie le résultat au tampon du clavier. Il diffuse toujours des `Intent`.
+  - **Scan Enter** : ajoute un retour chariot aux données lues par la lecture.
+  - **Data Send** : vous pouvez choisir entre le numéro de carte et le `Facility code` à envoyer au clavier.
+  - **Facility code** : dépend de la carte que vous voulez lire, le numéro de carte sera différent si la carte à un `Facility code` ou non.
 
 
-  4.Reader configuration
-   - Hid Card configuration : allows using an HID card configuration. You need to present and hold the card front of the antenna until the configuration is finished.
+ 4.Reader configuration
+   - Hid Card configuration : permet l'utilisation d'une carte de configuration HID. Vous devez présenter la carte devant l'antenne
+ et la maintenir jusqu'à ce que la configuration soit finie.
 
 
 iClass scan
----------
- This application just start a scan to read an iClass/LF prox card.
- You can use it remapping this application to on (or more) of the 3 programmable button. You can do it on the device in Settings > Remap key & shortcut.
+-----------
+
+ Cette application lance un scan pour lire une carte iClass/LF prox.
+ Vous pouvez utiliser cette application en l'associant avec un (ou plusieurs) bouton programmable. Vous pouvez
+ effectuer cette opération sur le terminal dans Paramètres -> Remap key & shorcut.
 
 
-Using iClass Wedge with intents in your application
----------------------------------
 
-- For this example, Coppernic Core library is used. You must declare it in build.gradle.
+Utiliser iClass Wedge avec intents dans votre application
+---------------------------------------------------------
+
+- POur cet exemple, la bibliothèqe CpcCore de Coppernic est utilisée. Vous devez la déclarer dans votre build.gradle.
 
 ``` groovy
-// At project level
+// Au niveau du projet
 allprojects {
     repositories {
         google()
@@ -87,12 +92,12 @@ allprojects {
 ```
 
 ``` groovy
-// At module level
-implementation 'fr.coppernic.sdk.core:CpcCore:1.9.1'
+// Au niveau du module
+implementation 'fr.coppernic.sdk.core:CpcCore:1.11.1'
 ```
 
 
-- Declare a broadcast receiver in your class, it will receive the intents from the iClass Wedge application.
+- Déclarer un `BroadcastReceiver` dans votre classe, il recevra les `Intent` en provenance de l'application iClass Wedge.
 
 ``` java
 private BroadcastReceiver iClassReceiver = new BroadcastReceiver() {
@@ -114,7 +119,7 @@ private BroadcastReceiver iClassReceiver = new BroadcastReceiver() {
 };
 ```
 
-- Register the receiver, for example in onStart:
+- Enregistrer le `BroadcastReceiver`, par exemple dans la méthode `onStart()`:
 
 ``` java
 @Override
@@ -128,7 +133,7 @@ protected void onStart() {
 }    
 ```
 
-- And unregister it, in onStop for example:
+- et le désincrire, dans la méthode `onStop()` par exemple:
 
 ``` java
 @Override
@@ -139,7 +144,7 @@ protected void onStop() {
 }
 ```
 
-- Trig a read:
+- Déclencher une lecture:
 
 ```java
 
@@ -154,8 +159,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 }
 ```
 
-If you don't want to declare CpcCore in your build, then here are
-string values:
+Si vous ne voulez pas déclarer *CpcCore* dans votre application, voici les valeurs au format string:
 
 ```java
 //Hid Iclass

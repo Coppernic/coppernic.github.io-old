@@ -4,6 +4,7 @@ HID iClass Wedge
 
 Introduction
 ------------
+
 This application demonstrates how to use the HID iClass/LF Prox Wedge application on a C-One² with HID iClass/LF Prox RFID reader.
 The application is composed of two parts:
 
@@ -13,6 +14,7 @@ The application is composed of two parts:
 
 Prerequisites
 -------------
+
 ### C-One² iClass
 
  - CoreServices version 1.9.0 and above must be installed on the device.
@@ -27,6 +29,7 @@ Coppernic's wedge applications add a deeper integration capability by using Andr
 
 iCLass settings
 --------------
+
 iCLass Settings allows confuring wedge for the Sound, Timeout and so on...
 Settings screen is composed of four sections :
   - Service
@@ -66,6 +69,7 @@ Settings screen is composed of four sections :
 
 iClass scan
 ---------
+
  This application just start a scan to read an iClass/LF prox card.
  You can use it remapping this application to on (or more) of the 3 programmable button. You can do it on the device in Settings > Remap key & shortcut.
 
