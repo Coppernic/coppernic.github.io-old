@@ -1,15 +1,16 @@
 Build
 ======
 
-We are supporting [Gradle](https://developer.android.com/studio/build) build system that comes with Android ecosystem.
-We are not supporting other build system such as Xamarin, Cordova, Flutter or old Android build system with Eclipse and Ant.
+Coppernic travaille avec le système de build [Gradle](https://developer.android.com/studio/build) fourni avec l'écosystème Android.
+Nous ne fournissons pas de support avec les autres systèmes de build tel que Cordova, Flutter ou les anciens systèmes avec Eclipse et Ant. Nous faisons de temps en temps
+une exception pour Xamarin.
 
-Repository
-----------
+Dépôt
+-----
 
-Coppernic's libs are stored in [artifactory ](https://artifactory.coppernic.fr/artifactory/webapp/#/home).
+Les bibliothèques fournies par Coppernic sont stockées sur [artifactory ](https://artifactory.coppernic.fr/artifactory/webapp/#/home).
 
-On your `build.gradle` file add a repository:
+Ajouter un dépôt dans le fichier `build.gradle`
 
 ```groovy
 repositories {
@@ -20,10 +21,10 @@ repositories {
 }
 ```
 
-Dependencies
-------------
+Dépendances
+-----------
 
-You can then add Coppernic's dependencies in your build:
+Vous pouvez ensuite ajouter les dépendances de votre application:
 
 ```groovy
 dependencies {
