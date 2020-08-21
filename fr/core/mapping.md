@@ -1,23 +1,23 @@
 Key Mapping
 ===========
 
-## API from CpcCore 1.8.0 (package `mapping`)
+## API de CpcCore 1.8.0 (package `mapping`)
 
-This API is made to work on all Coppernic's products (Currently C-One, C-five and C-One²), and on all OS.
-But you have to keep in mind that this API uses different internal API under the hood that can have some limitations.
+Cette API est conçue pour fonctionner sur tous les produits Coppernic (Actuellement C-One, C-five et C-One²), et sur tous les OS.
+Mais vous devez garder à l'esprit que cette API utilise en interne différentes API qui peuvent avoir des limites.
 
-For instance, to get the actual mapping value on C-five, you need to have at least the OS version v20180709.
+Par exemple, pour avoir le mapping actuel sur C-five, vous devez au moins avoir la version d'OS v20180709.
 
-This API is fully implemented on:
+Cette API est complètement implémentée sur:
 
   - C-five OS v20180928
   - C-One² OS v20180907
 
-All other OS and C-One are also supported but it may have some limitation. Please test API you need and contact [Coppernic Support](support@coppernic.fr) if you need help.
+Tous les autres OS et C-One sont aussi compatibles mais il peut y avoir des limites. Testez l'API dont vous avez besoin et contactez le [Support Coppernic](support@coppernic.fr) si vous avez besoin d'aide.
 
-### Get a `Mapper` object
+### Obtenir un objet `Mapper`
 
-First thing to do is getting a `Mapper` object. A connection to a service is needed so getting a reference is done in an asynchronous manner. RxJava is here to help:
+La première chose à faire est d'obtenir un objet `Mapper`. Une connexion au service est requise donc obtenir cette référence doit être faite de manière asynchrone. RxJava est ici pour nous aider:
 
 ```java
 Mapper.Factory.getKeyMapperSingle(context)
@@ -52,27 +52,27 @@ import static fr.coppernic.sdk.mapping.Mapper.ProgKey.P3;
 
 #### Prog keys
 
-Programmable keys values are defined in `Mapper.ProgKey` enum.
+Les valeurs des touches programmables sont définies dans l'enum `Mapper.ProgKey`.
 
 #### API
 
 ```java
-// Remove mapping for button 1
+// Suppression de l'association du bouton 1
 mapper.remove(P1);
-// Remove mapping for button 2
+// Suppression de l'association du bouton 2
 mapper.remove(P2);
-// Remove mapping for button 3
+// Suppression de l'association du bouton 3
 mapper.remove(P3);
 
-// Remove all mapping
+// Suppression de toutes les associations 
 mapper.removeAll();
 
-// Map a key
+// Associer une touche
 mapper.mapKey(P1, KeyEvent.KEYCODE_1);
 mapper.mapKey(P2, KeyEvent.KEYCODE_2);
 mapper.mapKey(P3, KeyEvent.KEYCODE_3);
 
-// Get current mapping
+// Obtenir l'association actuelle
 assertThat(mapper.getKeyMapping(P1), is(KeyEvent.KEYCODE_1));
 assertThat(mapper.getKeyMapping(P2), is(KeyEvent.KEYCODE_2));
 assertThat(mapper.getKeyMapping(P3), is(KeyEvent.KEYCODE_3));
@@ -80,33 +80,33 @@ assertThat(mapper.getMappingType(P1), is(MappingType.KEY));
 assertThat(mapper.getMappingType(P2), is(MappingType.KEY));
 assertThat(mapper.getMappingType(P3), is(MappingType.KEY));
 
-// Map P1 to BARCODE_SCAN
+// Associer la touche P1 à BARCODE_SCAN
 mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode());
 
-// Map a shortcut
+// Associer un raccourcis
 mapper.mapShortcut(P1, context, "com.google.android.youtube");
 assertThat(mapper.getShortcutMapping(P1), is("com.google.android.youtube"));
 assertThat(mapper.getMappingType(P1), is(MappingType.SHORTCUT));
 
-//When you are done with mapper object
+//Quand vous en avez fini avec l'objet `Mapper`
 mapper.close();
 ```
-### Special Case for Barcode
+### Cas spéciaux pour Barcode
 
 #### C-One²
 
-API is stable from OS v20180907
+L'API est stable à partir de l'OS v20180907
 
-- Map a key to BARCODE_SCAN: `mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode())`
-- Get the BARCODE_SCAN value: `assertThat(mapper.getKeyMapping(P1), is(MapperUtils.getBarcodeMappingKeyCode()));`
+- Associer une touche à BARCODE_SCAN: `mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode())`
+- Obtenir la valeur de BARCODE_SCAN: `assertThat(mapper.getKeyMapping(P1), is(MapperUtils.getBarcodeMappingKeyCode()));`
 
 #### C-five
 
 - OS v20171117:
-  - `mapper.getKeyMapping()` is not working well.
+  - `mapper.getKeyMapping()` ne fonctionne pas.
 - OS v20180709:
-  - Map a key to BARCODE_SCAN: `mapper.mapKey(P1, 293)`
-  - Get the BARCODE_SCAN value: `assertThat(mapper.getKeyMapping(P1), is(KeyEvent.KEYCODE_BUTTON_MODE));`
+  - Associer une touche à BARCODE_SCAN: `mapper.mapKey(P1, 293)`
+  - Obtenir la valeur de BARCODE_SCAN: `assertThat(mapper.getKeyMapping(P1), is(KeyEvent.KEYCODE_BUTTON_MODE));`
 - OS v20180928
-  - Map a key to BARCODE_SCAN: `mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode())`
-  - Get the BARCODE_SCAN value: `assertThat(mapper.getKeyMapping(P1), is(MapperUtils.getBarcodeMappingKeyCode()));`
+  - Associer une touche à BARCODE_SCAN: `mapper.mapKey(P1, MapperUtils.getBarcodeMappingKeyCode())`
+  - Obtenir la valeur de BARCODE_SCAN: `assertThat(mapper.getKeyMapping(P1), is(MapperUtils.getBarcodeMappingKeyCode()));`
