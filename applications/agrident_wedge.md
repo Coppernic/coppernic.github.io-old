@@ -13,6 +13,7 @@ The application is composed of two parts:
 
 Prerequisites
 -------------
+
 ### C-One² LF Agrident
 
  - CoreServices version 1.9.0 and above must be installed on the device.
@@ -25,7 +26,7 @@ What is a keyboard wedge?
 
 A keyboard wedge is an application that can acquire data and send it directly into the keyboard buffer, just as if it was typed on a virtual keyboard.
 
-Coppernic's wedge applications add a deeper integration capability by using Android intent in order to send reader's events (successful read or read failure).
+Coppernic's wedge applications add a deeper integration capability by using Android `Intent` in order to send reader's events (successful read or read failure).
 
 
 Agrident settings
@@ -76,7 +77,9 @@ Agrident Wedge Scan
 
  ``` groovy
  // At module level
- implementation(group: 'fr.coppernic.sdk.cpcutils', name: 'CpcUtilsLib', version: '6.13.0', ext: 'aar')
+ dependencies {
+     implementation 'fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.13.0'
+}
  ```
 
 
