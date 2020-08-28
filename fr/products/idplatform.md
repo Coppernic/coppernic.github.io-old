@@ -12,9 +12,9 @@ Quick start
 ### Powering
 
 To control powering of peripherals, `CoreServices` application needs to be installed.
-This application is available on [F-Droid](fdroid.md).
-Power control is done via [CpcCore](core.md) library.
-More information [here](core/power.md).
+This application is available on [F-Droid](fr/fdroid.md).
+Power control is done via [CpcCore](fr/core.md) library.
+More information [here](fr/core/power.md).
 
 It is strongly advised to power off peripherals when screen is going off. This can be done
 in `onStop()` method of `Activity` or `Fragment`. Powering off devices this way

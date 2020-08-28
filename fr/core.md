@@ -29,15 +29,15 @@ HDK
 
 How to use HDK on:
 
- * [C-One & C-One² family](core/hdk_cone.md)
+ * [C-One & C-One² family](fr/core/hdk_cone.md)
 
 Power
 -----
 
- - [power package](core/power.md)
+ - [power package](fr/core/power.md)
 
 Others
 --------
 
- * [Settings](core/settings.md)
- * [Key Mapping](core/mapping.md)
+ * [Settings](fr/core/settings.md)
+ * [Key Mapping](fr/core/mapping.md)

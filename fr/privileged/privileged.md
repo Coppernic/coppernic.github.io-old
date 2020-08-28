@@ -31,7 +31,7 @@ dependencies {
 
 ## Usage
 
-- [Time API](privileged/time.md)
+- [Time API](fr/privileged/time.md)
 
 ### Logs
 

@@ -33,16 +33,20 @@
       },
       coverpage: true,
       loadSidebar: true,
+      loadNavbar: true,
       name: 'Documentation',
       repo: 'https://github.com/Coppernic/coppernic.github.io',
       search: {
             noData: {
+              '/fr/': 'Pas de résultats',
               '/': 'No results!'
             },
             paths: 'auto',
             placeholder: {
+              '/fr/': 'Recherche',
               '/': 'Search'
-          }
+          },
+          pathNamespaces: ['/fr']
       },
       themeColor: '#FF2500',
       notFoundPage: {
@@ -50,7 +54,7 @@
       },
       remoteMarkdown: {
         tag: 'remoteMarkdownUrl',
-      },
+      }
     }
   </script>
   <!--script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
