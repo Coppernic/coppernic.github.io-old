@@ -11,7 +11,7 @@ In the meantime, Coppernic can provide intermediary version with bug fixes if ne
 
 There are two kinds of updates:
 
- - **Classical**: A [factory reset](os/factory_reset.md) is performed during update process. All custom data are lost and a full reinstall is needed.
+ - **Classical**: A [factory reset](fr/os/factory_reset.md) is performed during update process. All custom data are lost and a full reinstall is needed.
  - **OTA**: This is a differential update that can be performed between *Major Release* OS. This method is available
  under specific conditions. Please contact our [support center](https://support.coppernic.fr/index.php) for more information.
 

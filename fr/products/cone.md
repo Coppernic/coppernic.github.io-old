@@ -13,7 +13,7 @@ Barcode Scanning
 
 C-One² is equiped with a 2D barcode scanner. It can read both 1D and 2D symbologies:
 
-- [Barcode](barcode/manager.md)
+- [Barcode](fr/barcode/manager.md)
 
 Key mapping
 -----------
@@ -22,17 +22,17 @@ C-One² has 3 programmable buttons that can be managed using API. It is possible
 
 ![](_images/cone_side_01.jpg) ![](_images/cone_side_02.jpg)
 
-- [Documentation](core/mapping.md)
+- [Documentation](fr/core/mapping.md)
 
 RFID
 ----
 
-- [ASK](products/ask.md)
-- [HID](products/hid.md)
-- [Agrident](products/agrident.md)
-- [Legic](products/legic.md)
+- [ASK](fr/products/ask.md)
+- [HID](fr/products/hid.md)
+- [Agrident](fr/products/agrident.md)
+- [Legic](fr/products/legic.md)
 
 Technical notes
 ---------------
 
-- [E-MMC](products/technical_C-one_emmc.md)
+- [E-MMC](fr/products/technical_C-one_emmc.md)
