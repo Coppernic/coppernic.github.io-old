@@ -40,7 +40,7 @@ Les paramètres de l'application *Agrident Wedge* permettent la configuration du
  - Scan Sound: joue un son après une lecture réussie ou non.
  - Scan Display: affiche une icône durant la lecture.
  - Scan Timeout: configure la durée pendant laquelle le lecteur va essayer de lire un tag.
- - Agrident Service startup boot: si activé, le service va ce lancer automatiquement au démarrage du terminal.
+ - Agrident Service startup boot: si activé, le service va se lancer automatiquement au démarrage du terminal.
  - Continuous Read: le lecteur va lire en permanence jusqu'à ce que le service soit stoppé ou l'écran éteint.
  - Keyboard Wedge: si activé, envoie le résultat au clavier. Un `Intent` est toujours envoyé.
  - Scan Enter: ajoute un retour chariot dans le tampon du clavier après les données lues.
@@ -50,13 +50,13 @@ Les paramètres de l'application *Agrident Wedge* permettent la configuration du
  ---------------------
 
  Cette application lance un scan pour lire un tag LF.
- Vous pouvez utiliser cette application en l'associant avec un (ou plus) bouton programmable. Vous pouvez effectuer cette opération sur le terminal dans `Paramètres` -> `Remap key & shorcut`.
+ Vous pouvez utiliser cette application en l'associant avec un (ou plusieurs) bouton programmable. Vous pouvez effectuer cette opération sur le terminal dans `Paramètres` -> `Remap key & shorcut`.
 
 
  Utiliser Agrident Wedge comme un clavier
  ----------------------------------------
 
- - Associer l'application *Agrident Wedge Scan* avec un (ou plus) bouton programmable du C-One.
+ - Associer l'application *Agrident Wedge Scan* avec un (ou plusieurs) bouton programmable du C-One.
  - Configurer l'option *Keyboard Wedge* de l'application
  - Appuyer sur le bouton.
  - Les données sont envoyées au système comme des entrées clavier.
