@@ -90,8 +90,11 @@ To realize this operation a micro SD card of minimum 2 GB is necessary:
 
 This method uses OTA (Over The Air) package:
 
-* Reboot ID Platform on Recovery mode: `adb reboot recovery`,
-* On Recovery page select **adb update**,
+* When device is switched off, plug the device on charger, then hold `POWER` and `VOLUME +` buttons until getting into Recovery mode
+![](_media/idp_recovery_1.png)
+* Hold `POWER` button, then press `VOLUME +` button to display recovery menu
+![](_media/idp_recovery_2.png)
+* On Recovery page select **Apply update from ADB**, then plug your computer on USB-C connector
 * On your computer run `adb sideload [PACKAGE_FILE]` (Replace [PACKAGE_FILE] by the name of your package),
 * When update is complete, reboot the device.
 
