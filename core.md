@@ -15,8 +15,8 @@ repositories {
 
 ```groovy
 dependencies {
-    implementation 'fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.18.4'
-    implementation 'fr.coppernic.sdk.core:CpcCore:1.8.16'
+    implementation 'fr.coppernic.sdk.cpcutils:CpcUtilsLib:6.19.1'
+    implementation 'fr.coppernic.sdk.core:CpcCore:1.11.2'
 
 }
 ```
