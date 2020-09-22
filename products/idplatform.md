@@ -20,9 +20,35 @@ It is strongly advised to power off peripherals when screen is going off. This c
 in `onStop()` method of `Activity` or `Fragment`. Powering off devices this way
 will help saving battery life.
 
+### USB-C and powering
+
+The device contains an USB-C connector. As some peripherals are connected internally through USB, powering them causes USB-C not being available, especially for Android Debug Bridge (ADB).
+So it's strongly recommanded to use ADB over WIFI when debugging an application (adb logcat).
+ADB over WIFI is configured as follows :
+- Enable (once) developer mode :
+	- Go to `Settings` ==> `About phone` and press 5 times on `Build number`, until message "You are now a developer" is displayed
+- Enable ADB over Wifi
+	- Go to `Settings` ==> `System` ==> `Advanced` ==> `Developer options` ==> enable `WIFI debugging`
+- Connect your device on WIFI network shared with your computer
+- Get the WIFI IP address in `Settings` ==> `About phone` ==> `IP address`
+- From your computer enter :
+	- `adb connect [DEVICE_IP_ADDR]` (Replace [DEVICE_IP_ADDR] by the IP address of your device)
+- Check that adb over wifi is connected by :
+	- `adb devices`
+
+Then you can execute `adb -s [DEVICE_IP_ADDR]:5555 logcat` or `adb -s [DEVICE_IP_ADDR]:5555 install [APK_PATH]` to execute logcat or apk install through WIFI.
+
+If apk file is too big to install, it's recommanded to install the apk through USB-C, then debug through ADB over WIFI.
+
+To ensure USB-C is active, you can enter the secret code in Phone application : `*#*#44004#*#*` <br> It shows the state of each peripherals, you can disable all USB connected peripherals (including USB Host) to have USB-C available.
+
+
+
 ### Peripherals
 
 Each tablet can contain a set of peripherals, depending on which version you have. These peripherals can be connected to the main board via USB, Serial or SPI connections.
+
+
 
 #### Permissions
 
