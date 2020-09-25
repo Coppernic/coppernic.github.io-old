@@ -27,6 +27,8 @@
         - [Time](privileged/time.md)
 
 - Products
+    - [Access](products/access.md)
+    - [C-five](products/cfive.md)
     - [C-One & C-One²](products/cone.md)
         - [HF ASK](products/ask.md)
         - [LF Agrident](products/agrident.md)
@@ -36,7 +38,6 @@
         - [PCSC](products/pcsc.md)
         - [Finger print](products/fingerprint.md)
         - [OCR](products/ocr.md)
-    - [C-five](products/cfive.md)
     - [ID Platform](products/idplatform.md)
 
 - Applications
