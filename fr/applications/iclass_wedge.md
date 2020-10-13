@@ -78,7 +78,7 @@ iClass scan
 Utiliser iClass Wedge avec intents dans votre application
 ---------------------------------------------------------
 
-- POur cet exemple, la bibliothèqe CpcCore de Coppernic est utilisée. Vous devez la déclarer dans votre build.gradle.
+- Pour cet exemple, la bibliothèqe CpcCore de Coppernic est utilisée. Vous devez la déclarer dans votre build.gradle.
 
 ``` groovy
 // Au niveau du projet
