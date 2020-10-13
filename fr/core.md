@@ -21,23 +21,23 @@ dependencies {
 }
 ```
 
- * Last versions of libs can be found in [artifactory](https://artifactory.coppernic.fr/artifactory/webapp/#/home).
- * `implementation` is a key work of Android gradle plugin 3.x.x, if you are using an older plugin, consider using `compile` instead.
+ * Les dernières versions de libs sont disponible sur [artifactory](https://artifactory.coppernic.fr/artifactory/webapp/#/home).
+ * `implementation` est un mot clé du plugin Gradle 3.x.x pour Android, si vous utilisez un plugin plus ancien, utilisez `compile` à la place.
 
 HDK
 ---
 
-How to use HDK on:
+Comment utiliser HDK sur:
 
- * [C-One & C-One² family](fr/core/hdk_cone.md)
+ * [Famille des C-One & C-One²](/fr/core/hdk_cone.md)
 
 Power
 -----
 
- - [power package](fr/core/power.md)
+ - [Alimentation](/fr/core/power.md)
 
-Others
---------
+Autres
+------
 
- * [Settings](fr/core/settings.md)
- * [Key Mapping](fr/core/mapping.md)
+ * [Paramètres](/fr/core/settings.md)
+ * [Mappage des touches](/fr/core/mapping.md)

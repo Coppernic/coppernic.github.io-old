@@ -19,6 +19,6 @@ Sur la première génération de produits Coppernic, le service s'appelle `CpcSy
 
 Si aucune des deux applications `CpcSystemServices` ou `CoreServices` n'est installé, les samples Coppernic ne pourront pas fonctionner correctement.
 
-Ces applications sont disponibles sur [CopperApps](copperapps.md).
+Ces applications sont disponibles sur [CopperApps](/fr/copperapps.md).
 
 Une fois le service installé, les [samples](https://github.com/Coppernic) pourront fonctionner correctement.
