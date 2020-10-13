@@ -1,21 +1,21 @@
-HDK for C-One
+HDK pour C-One
 =============
 
-Don't known what a C-One is ? The answer is [here](https://www.coppernic.fr/prehome-mobility-fr/).
+Si vous ne savez pas ce qu'est un C-One? La réponse est [ici](https://www.coppernic.fr/prehome-mobility-fr/).
 
-HDK API is designed with [RxJava2](https://github.com/ReactiveX/RxJava).
+L'API HDK a été conçue avec [RxJava2](https://github.com/ReactiveX/RxJava).
 
-Prerequisites
--------------
+Prérequis
+---------
 
-For first generation of products, app **CpcSystemServices** at version 2.1.0 or above needs to be installed on device.
-For [second generation](quickstart.md) **CoreService** app must be installed instead of **CpcSystemServices**.
-Please contact [Coppernic Support](support@coppernic.fr) in case of difficulties.
+Pour la première génération de produits, l'application **CpcSystemServices** à la version 2.1.0 ou supérieure doit être installée sur le terminal.
+Pour la [seconde génération](/fr/quickstart.md) **CoreService** doit être installée au lieu de **CpcSystemServices**.
+Vous pouvez contacter le [Support Coppernic](support@coppernic.fr) en cas de difficultés.
 
-Use Pins of C-One's expansion port
-----------------------------------
+Utiliser les pins du port d'expansion du C-One
+----------------------------------------------
 
-* Get a GpioPort instance:
+* Récupérer une instance de GpioPort :
 
 ```java
 private GpioPort gpioPort;
@@ -35,17 +35,17 @@ public void onStart() {
 }
 ```
 
-* Use it:
+* Bagoter la pin:
 
 ```java
 RESULT res = gpioPort.setPin1(true)
 ```
 
-Observe input pin state
------------------------
+Observer l'état de la pin d'entrée
+----------------------------------
 
 ```java
-//Register an observer to the input state
+//Enregistrer un observer sur l'état de la pin d'entrée
 Disposable d = GpioPort.observeInputPin4(getContext(), 200, TimeUnit.MILLISECONDS)
                 // Be notified only when value is changing
                 .distinctUntilChanged()
@@ -56,6 +56,6 @@ Disposable d = GpioPort.observeInputPin4(getContext(), 200, TimeUnit.MILLISECOND
                         //Do something
                     }
                 });
-//Dispose the observer when you are done
+//Disposer l'observer quand vous avez fini
 d.dispose()
 ```

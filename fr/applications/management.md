@@ -1,18 +1,18 @@
-App management
-==============
+Gestion des applications
+========================
 
-Application update
-------------------
+Mise à jour des applications
+----------------------------
 
-There are several ways to keep your applications up to date on your Coppernic devices
+Il y a plusieurs manières de tenir vos applications à jour sur vos terminaux Coppernic
 
-- **ADB** : Very handful at development stage. This tool from google allows you to do many things with your device. https://developer.android.com/studio/command-line/adb
+- **ADB** : Très utile en phase de développement. Cet outil de Google vous permet de faire beaucoup de choses sur votre terminal. https://developer.android.com/studio/command-line/adb
 
-- **SD Card** : You can put an apk in device's memory (SD Card or internal memeory), browse to your file and click on it for installation.
+- **SD Card** : Vous pouvez charger un apk dans la mémoire du terminal (Carte SD ou mémoire interne), accédez à votre fichier et cliquez dessus pour l'installer.
 
-- **Google Play** : On devices where [GMS](https://www.android.com/intl/en_us/gms/) are available, you can deploy your application on an market place such as Google Play.
+- **Google Play** : Sur les terminaux où les services [GMS](https://www.android.com/intl/fr_fr/gms/) sont disponibles, vous pouvez déployer votre application sur un market place tel que Google Play.
 
-- **EMM** : You can deploy your app wit an EMM such as MobiControl from Soti.
+- **EMM** : Vous pouvez déployer votre application avec un EMM tel que MobiControl de Soti.
 
-Both F-Droid and MobiControl can update your application even when device is kiosked.
-We could also give some pieces of advice to choose the kiosk application that's right for you.
+CopperApps et MobiControl peuvent mettre à jour votre application même lorsque l'appareil est kiosqué.
+Nous pourrions également vous donner quelques conseils pour choisir l'application de diffusion qui vous convient.

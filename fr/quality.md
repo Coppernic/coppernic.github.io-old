@@ -1,24 +1,21 @@
-Quality
+Qualité
 =======
 
-## Generalities
+## Généralités
 
-While developping your application on our device, please follow guidelines
-from google :
+Durant le développement de votre application sur notre terminal, merci de suivre les recommandations de Google:
 
-[Core App Quality](https://developer.android.com/docs/quality-guidelines/core-app-quality)
+[Qualité des applications](https://developer.android.com/docs/quality-guidelines/core-app-quality)
 
-Please also read google document about
-[Battery Life Optimization](https://developer.android.com/topic/performance/power)
+Merci de lire aussi le document de Google sur [l'optimisation de la durée de vie de la batterie](https://developer.android.com/topic/performance/power)
 
 ## RFID
 
-Looking for a card (Hunting) can be power consuming. Please implement every
-strategies that are fine for you to decrease time where RFID reader is in use.
+La recherche d'une carte (Chasse) peut être consommateur de courant. Veuillez mettre en place
+toutes les solutions que vous jugerez utile pour réduire le temps d'utilisation de votre lecteur RFID.
 
-For instance, during hunt time, RF field can be up during 200ms and then
-turned off during 800ms. These settings ensure that user experience
-will not be affected and preserve battery life.
+Par exemple, durant le temps de chasse, le champ électromagnétique peut être alimenté pendant 200ms puis éteint pendant 800ms.
+Ces paramètres assurent que l'expérience utilisateur ne sera pas affecté et préserve l'autonomie de la batterie.
 
-Please make sure that when screen is turned off or when operator is leaving
-your application (or RFID related screens), then all peripherals are turned off.
+Assurez-vous lorsque l'écran s'éteint ou quand l'utilisateur quitte votre application (ou les écrans liés à la RFID),
+que tous les périphériques s'éteignent également.

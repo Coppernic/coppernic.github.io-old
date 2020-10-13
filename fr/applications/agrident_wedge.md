@@ -19,7 +19,7 @@ Prérequis
  - CoreServices version 1.9.0 et supérieure doit être installée sur le terminal.
  - Agrident Wedge 2.2.0 et supérieure doit être installée sur le terminal.
 
- Les application sont disponibles sur [CopperApps](copperapps.md) (Disponible en téléchargement [ici](https://coppernic.fr/copperapps.apk)).
+ Les application sont disponibles sur [CopperApps](/fr/copperapps.md) (Disponible en téléchargement [ici](https://coppernic.fr/copperapps.apk)).
 
 Qu'est ce qu'un keyboard wedge?
 -------------------------------
