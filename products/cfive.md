@@ -21,3 +21,8 @@ Key mapping
 C-five has 3 programmable buttons that can be managed using API. It is possible to remap a virtual key or an application on each of them:
 
 - [Documentation](core/mapping.md)
+
+Windows drivers
+---------------
+
+- [Drivers](/products/_data/C-five_drivers_for_windows.zip)
