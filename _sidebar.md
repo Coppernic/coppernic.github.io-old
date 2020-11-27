@@ -6,7 +6,6 @@
 
 - OS
    - [Security and update policies](os/policy.md)
-   - [Update procedure](os/update.md)
    - [Factory Reset](os/factory_reset.md)
 
 - SDK
