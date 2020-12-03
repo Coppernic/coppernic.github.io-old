@@ -5,7 +5,7 @@ Coppernic SDK Documentation
 
 ## Libraries
 
-Coppernic SDK is a collection of Android libraries to help developer in using peripherals of Coppernic's products. These libraries are hosted on an artifactory instance available at [artifactory.coppernic.fr](https://artifactory.coppernic.fr/artifactory/webapp/#/home). You can browse in `libs-release-coppernic` repository and check out what are the last version of our libs.
+Coppernic SDK is a collection of Android libraries to help developer in using peripherals of Coppernic's products. These libraries are hosted on an maven instance available at [nexus.coppernic.fr](https://nexus.coppernic.fr/). You can browse in `libs-release-coppernic` repository and check out what are the last version of our libs.
 
 While developping your application, please have a look to [quality](quality)
 

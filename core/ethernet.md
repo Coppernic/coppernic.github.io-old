@@ -19,7 +19,7 @@ charge is available only through docking station with AC plug connected and powe
 ### Getting started
 
 API to enable Ethernet and "Ethernet Cradle" option is available through `EthernetConnector` class. It is available on CpcCore from version
-[1.8.17](https://artifactory.coppernic.fr/artifactory/webapp/#/artifacts/browse/tree/General/libs-release-coppernic/fr/coppernic/sdk/core/CpcCore/1.8.17)
+[1.8.17](https://nexus.coppernic.fr/#browse/browse:libs-release:fr%2Fcoppernic%2Fsdk%2Fcore%2FCpcCore%2F1.8.17)
 
 - Getting `EthernetConnector`:
 

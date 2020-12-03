@@ -9,7 +9,7 @@ Build
 ```groovy
 repositories {
         //[...]
-        maven { url "https://artifactory.coppernic.fr/artifactory/libs-release" }
+        maven { url "https://nexus.coppernic.fr/repository/libs-release" }
     }
 ```
 
@@ -21,7 +21,7 @@ dependencies {
 }
 ```
 
- * Last versions of libs can be found in [artifactory](https://artifactory.coppernic.fr/artifactory/webapp/#/home).
+ * Last versions of libs can be found in [repo](https://nexus.coppernic.fr/#browse/browse).
  * `implementation` is a key work of Android gradle plugin 3.x.x, if you are using an older plugin, consider using `compile` instead.
 
 HDK

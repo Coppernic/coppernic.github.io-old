@@ -7,20 +7,9 @@ We are not supporting other build system such as Xamarin, Cordova, Flutter or ol
 Repository
 ----------
 
-Coppernic's libs are stored in [artifactory ](https://artifactory.coppernic.fr/artifactory/webapp/#/home).
+Coppernic's libs are stored in [nexus](https://nexus.coppernic.fr).
 
 On your `build.gradle` file add a repository:
-
-```groovy
-repositories {
-    //[...]
-    maven { url "https://artifactory.coppernic.fr/artifactory/libs-release" }
-    // Some librairies hosted on github are published in bintray
-    maven { url "https://dl.bintray.com/coppernic/maven" }
-}
-```
-
-:warning: 2020-12-03: We are experiencing some trouble with https://artifactory.coppernic.fr. As a backup, you can use our nexus repo:
 
 ```groovy
 repositories {
@@ -30,6 +19,9 @@ repositories {
     maven { url "https://dl.bintray.com/coppernic/maven" }
 }
 ```
+
+> :warning: `https://artifactory.coppernic.fr/artifactory/` is now redirected to `https://nexus.coppernic.fr/repository/`.
+> Please change it in your **build.gradle** file :warning:
 
 Dependencies
 ------------
