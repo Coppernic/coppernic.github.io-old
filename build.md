@@ -20,6 +20,17 @@ repositories {
 }
 ```
 
+:warning: 2020-12-03: We are experiencing some trouble with https://artifactory.coppernic.fr. As a backup, you can use our nexus repo:
+
+```groovy
+repositories {
+    //[...]
+    maven { url "https://nexus.coppernic.fr/repository/libs-release" }
+    // Some librairies hosted on github are published in bintray
+    maven { url "https://dl.bintray.com/coppernic/maven" }
+}
+```
+
 Dependencies
 ------------
 
