@@ -15,8 +15,8 @@ Supported devices
 This API is almost the same that the old one. Only `groupId` of dependencies is changing.
 Old one is `"fr.coppernic.sdk.barcode:CpcBarcode:3.5.0"`
 
-- [Old CpcBarcode repository](https://artifactory.coppernic.fr/artifactory/webapp/#/artifacts/browse/tree/General/libs-release-coppernic/fr/coppernic/sdk/barcode/CpcBarcode)
-- [CpcBarcode repository](https://artifactory.coppernic.fr/artifactory/webapp/#/artifacts/browse/tree/General/libs-release-coppernic/fr/coppernic/lib/barcode)
+- [Old CpcBarcode repository](https://nexus.coppernic.fr/#browse/browse:libs-release:fr%2Fcoppernic%2Fsdk%2Fbarcode%2FCpcBarcode)
+- [CpcBarcode repository](https://nexus.coppernic.fr/#browse/browse:libs-release:fr%2Fcoppernic%2Flib%2Fbarcode)
 
 Build
 -----
@@ -25,7 +25,7 @@ Build
 
 ```groovy
 repositories {
-    maven { url 'https://artifactory.coppernic.fr/artifactory/libs-release' }
+    maven { url 'https://nexus.coppernic.fr/repository/libs-release' }
 }
 
 String barcode = "1.3.3"

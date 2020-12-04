@@ -16,11 +16,11 @@ You need to have `Privileged Extension` application installed on device. This ap
 
 ## Download
 
-Check out the last version in [our maven repo](https://artifactory.coppernic.fr/artifactory/webapp/#/artifacts/browse/tree/General/libs-release-coppernic/fr/coppernic/lib/privileged/Privileged)
+Check out the last version in [our maven repo](https://nexus.coppernic.fr/)
 
 ```groovy
 repositories {
-    maven { url "https://artifactory.coppernic.fr/artifactory/libs-release" }
+    maven { url "https://nexus.coppernic.fr/repository/libs-release" }
 }
 
 dependencies {

@@ -73,7 +73,7 @@ Les paramètres de l'application *Agrident Wedge* permettent la configuration du
      repositories {
          google()
          jcenter()
-         maven { url "https://artifactory.coppernic.fr/artifactory/libs-release" }
+         maven { url "https://nexus.coppernic.fr/repository/libs-release" }
      }
  }
  ```
