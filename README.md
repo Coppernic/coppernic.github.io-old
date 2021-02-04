@@ -13,6 +13,8 @@ While developping your application, please have a look to [quality](quality)
 
 Coppernic products are:
 
+- Access
+- C-five
 - C-One
     - HF ASK
     - LF Agrident
@@ -23,8 +25,10 @@ Coppernic products are:
     - LF Agrident
     - HF iClass / LF Prox
 - C-One² e-ID
-- C-five
 - ID Platform
+    - FAP-50
+    - FAP-30
+    - FAP-20
 
 ## Samples
 
