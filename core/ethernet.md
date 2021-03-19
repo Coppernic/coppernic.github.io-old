@@ -9,8 +9,14 @@ Some devices can have Ethernet feature built-in. Ethernet is available through d
 - C-One² e-ID
 
 For C-One² and C-One² e-ID from OS Build 20190329, an option has been added to have the choice between Ethernet through docking station or Ethernet through USB
-dongle. This option is called "Ethernet Cradle". It is available on device Settings. With "Ethernet Cradle" option activated, Ethernet is usable through docking
-station. With "Ethernet Cradle" option disabled, Ethernet is usable through USB dongle.
+dongle. This option is called "Ethernet Cradle". 
+
+It is available on device Settings. 
+ - "Ethernet Cradle" on -> Ethernet is used through docking
+ - "Ethernet Cradle" off -> Ethernet is used through USB dongle.
+
+In both case,"Ethernet" option should be enabled to make the "Ethernet Cradle" option available.
+
 When Ethernet is activated, USB port of C-One² is in Host mode. C-One² cannot be charged by USB anymore and plugging device on PC will do nothing. Device
 charge is available only through docking station with AC plug connected and powered:
 
@@ -71,6 +77,21 @@ class Net {
 
     fun releaseResources() {
         connector?.close(enable)
+    }
+}
+```
+
+- Configure IP address: (there are no API available yet to set DHCP/ static IP)
+
+```kotlin
+class Net {
+    fun congigureStaticIp() {
+        StaticIpConfig.configureStatisIp(context,
+                        "10.0.1.10", //IP Address
+                        "24", //network prefix length
+                        "10.0.0.2", //Gateway
+                        "",//first DNS
+                        "") //second DNS
     }
 }
 ```
