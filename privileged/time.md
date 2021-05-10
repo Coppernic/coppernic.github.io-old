@@ -1,6 +1,8 @@
 
 # Time
 
+## API
+
 > Available from version 0.3
 
 This API allows calling application to configure time on Android device.
@@ -12,12 +14,12 @@ API key is given by Coppernic dev team and shall stay secret.
 **Getting TimeConnector object**
 
 ```java
-Manager.get().getConnector(context, new ServiceEmitter() {
+TimeServiceConnector.Manager.get().getConnector(context, new ServiceEmitter() {
     public void onSuccess(TimeServiceConnector timeServiceConnector) {
         // Yeah !
 
         // Authenticate calling application with an API key
-        it.auth("");
+        timeServiceConnector.auth("");
     }
 
     public void onError( Throwable t) {
@@ -60,4 +62,18 @@ timeServiceConnector.getAutoTimeZone(true);
 
 ```java
 timeServiceConnector.close();
+```
+
+## Setup
+
+**build.gradle**
+
+```
+repositories {
+    maven { url "https://nexus.coppernic.fr/repository/libs-release" }
+}
+
+dependencies {
+    implementation "fr.coppernic.lib.privileged:Privileged:0.5.1"
+}
 ```
