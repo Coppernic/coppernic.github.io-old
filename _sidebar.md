@@ -25,7 +25,7 @@
     - [Privileged](privileged/privileged.md)
         - [Time](privileged/time.md)
 
-- Products
+- Devices
     - [Access](products/access.md)
     - [C-five](products/cfive.md)
     - [C-One & C-One²](products/cone.md)
@@ -43,3 +43,7 @@
     - [Application management](applications/management.md)
     - [iClass Wedge](applications/iclass_wedge.md)
     - [Agrident Wedge](applications/agrident_wedge.md)
+
+- Use cases
+    - Secure ID
+        - [MRZ](usecases/mrz.md)
