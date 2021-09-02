@@ -3,15 +3,16 @@ Ethernet
 
 Some devices can have Ethernet feature built-in. Ethernet is available through docking station. These devices are:
 
+- access
 - C-One
 - C-One²
 - C-One e-ID
 - C-One² e-ID
 
 For C-One² and C-One² e-ID from OS Build 20190329, an option has been added to have the choice between Ethernet through docking station or Ethernet through USB
-dongle. This option is called "Ethernet Cradle". 
+dongle. This option is called "Ethernet Cradle".
 
-It is available on device Settings. 
+It is available on device Settings.
  - "Ethernet Cradle" on -> Ethernet is used through docking
  - "Ethernet Cradle" off -> Ethernet is used through USB dongle.
 
@@ -47,15 +48,31 @@ class Net {
 
 - Enable Ethernet:
 
-```kotlin
-class Net {
-    private var connector: EthernetConnector? = null
+  -For access device only:
+  ```kotlin
+  val SET_ETH_ENABLE_ACTION = "android.net.ethernet.SET_ETH_ENABLE_ACTION"
+  val SET_ETH_DISABLE_ACTION = "android.net.ethernet.SET_ETH_DISABLE_ACTION"
+  // Enable Ethernet:
+  val intent = Intent(SET_ETH_ENABLE_ACTION)
+  context.sendBroadcast(intent)
 
-    fun enableEthernet(enable: Boolean) {
-        connector?.enableEthernet(enable)
-    }
-}
-```
+  // Disable Ethernet:
+  val intent = Intent(SET_ETH_DISABLE_ACTION)
+  context.sendBroadcast(intent)
+
+  ```
+
+ -For other devices (C-One)
+
+  ```kotlin
+  class Net {
+      private var connector: EthernetConnector? = null
+
+      fun enableEthernet(enable: Boolean) {
+          connector?.enableEthernet(enable)
+      }
+  }
+  ```
 
 - Enable Cradle:
 
@@ -81,7 +98,7 @@ class Net {
 }
 ```
 
-- Configure IP address: (there are no API available yet to set DHCP/ static IP)
+- Configure static IP address:
 
 ```kotlin
 class Net {
@@ -92,6 +109,22 @@ class Net {
                         "10.0.0.2", //Gateway
                         "",//first DNS
                         "") //second DNS
+    }
+}
+```
+
+- Configure DHCP (available on CpcCore from version [2.0.2](https://nexus.coppernic.fr/#browse/browse:libs-release:fr%2Fcoppernic%2Fsdk%2Fcore%2FCpcCore%2F2.0.2))
+
+```kotlin
+class Net {
+    /**
+     * Configure DHCP on C-One 2 and Access
+     *
+     * This API is available on OS from 20210326
+     *
+     */
+    fun congigureDHCP() {
+        StaticIpConfig.configureDHCP(context)
     }
 }
 ```
