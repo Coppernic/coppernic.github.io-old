@@ -15,8 +15,8 @@ On your `build.gradle` file add a repository:
 repositories {
     //[...]
     maven { url "https://nexus.coppernic.fr/repository/libs-release" }
-    // Some librairies hosted on github are published in bintray
-    maven { url "https://dl.bintray.com/coppernic/maven" }
+    // Some librairies hosted on github are published on jitpack
+    maven { url 'https://jitpack.io' }
 }
 ```
 
@@ -40,7 +40,7 @@ dependencies {
     implementation 'fr.coppernic.lib:splash:0.2.0'
 
     // Some interactors used with RxJava
-    implementation 'fr.coppernic.lib:interactors:0.1.5'
+    implementation 'com.github.coppernic.Interactors:interactors:0.7.6'
 
     // Logging
     implementation 'com.jakewharton.timber:timber:4.7.1'
